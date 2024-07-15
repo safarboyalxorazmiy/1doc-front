@@ -17,7 +17,8 @@ function App() {
 
         <Route exact path="/dashboard" element={<Sidebar />} />
 
-        <Route path="*" component={<h1>Not found</h1>} />
+        {/* For other routes */}
+        <Route path="/*" element={<Sidebar />} />
       </Routes>
     </HashRouter> 
   );

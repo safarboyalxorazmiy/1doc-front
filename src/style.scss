@@ -1,5 +1,5 @@
-$primary-color: #0077B6;
-$primary-color-hover: #003f61;
+@import "./sidebar";
+@import "./colors";
 
 @font-face {
   font-family: 'Helvetica';
@@ -190,6 +190,11 @@ header {
     height: 150px;
     padding: 34px 100px;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #FFF;
+    z-index: 7;
 
     a.logo {
       text-decoration: none;
@@ -237,6 +242,7 @@ header {
   }
 
   .header-content {
+    margin-top: 150px;
     height: 470px;
     display: flex;
     flex-direction: column;

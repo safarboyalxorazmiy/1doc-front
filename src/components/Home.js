@@ -8,9 +8,9 @@ const Home = () => {
     return (
 			<div>
 				<header>
-					<div className="small-header">
+					{/* <div className="small-header">
 						<p>Biz bilan bog'laning: +998 91 797 23 85</p>
-					</div>
+					</div> */}
 
 					<nav>
 						<a href="/" className="logo">
