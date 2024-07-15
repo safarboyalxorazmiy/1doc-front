@@ -4,8 +4,27 @@ import '../style.css';
 import Form from 'react-bootstrap/Form';
 import { Tabs, Tab, Row, Col, Carousel } from 'react-bootstrap';
 import { TypeAnimation } from 'react-type-animation';
+import { useTranslation } from 'react-i18next';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGlobe, faFlag, faFlagUsa } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'; 
+import { useState } from 'react';
 
 const Home = () => {
+	const { t, i18n } = useTranslation();
+	const [isOpen, setIsOpen] = useState(false);
+	const [language, setLanguage] = useState("O'zbekcha");
+	const [reloadKey, setReloadKey] = useState(0);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+	const forceRerender = () => {
+    this.forceUpdate(); // Avoid using forceUpdate unless absolutely necessary
+  };
+
+
     return (
 			<div>
 				<header>
@@ -18,6 +37,25 @@ const Home = () => {
 							<img src="/assets/logo.svg" alt="1doc.uz Logo" />
 							<h1>1doc.uz</h1>
 						</a>
+						
+						<div className="dropdown" onMouseLeave={toggleDropdown} onMouseEnter={toggleDropdown} >
+							<button className="dropbtn">
+								<span>{language}</span>
+								<FontAwesomeIcon icon={faChevronDown} className={`icon ${isOpen ? 'open' : ''}`} />
+							</button>
+							{isOpen && (
+								<div className="dropdown-content">
+									<a className={language === "Ўзбекча" ? "active" : ""} onClick={() => {setLanguage("Ўзбекча"); i18n.changeLanguage("uz_kr"); setReloadKey(prevKey => prevKey + 1); }}>Ўзбекча</a>
+									<a className={language === "O'zbekcha" ? "active" : ""} onClick={() => {setLanguage("O'zbekcha"); i18n.changeLanguage("uz_la"); setReloadKey(prevKey => prevKey + 1); }}>O'zbekcha</a>
+									<a className={language === "Русский" ? "active" : ""} onClick={() => {setLanguage("Русский"); i18n.changeLanguage("ru"); setReloadKey(prevKey => prevKey + 1); }}>Русский</a>
+									<a className={language === "English" ? "active" : ""} onClick={() => {setLanguage("English"); i18n.changeLanguage("en"); setReloadKey(prevKey => prevKey + 1); }}>English</a>
+								</div>
+							)}
+						</div>
+
+
+
+
 						<div className="btns d-flex">
 							<button className="btn btn-primary">BEPUL BOSHLASH</button>
 							<button className="btn btn-outline-primary">KIRISH</button>
@@ -26,8 +64,9 @@ const Home = () => {
 
 					<div className="header-content">
 					<TypeAnimation
+						key={reloadKey}
 						sequence={[
-							'Murakkab yuridik hujjatlarni oson yaratish va tezkor imzolash',
+							t('header-title'),
 							1000
 						]}
 						wrapper="span"
@@ -36,7 +75,7 @@ const Home = () => {
 						className="header-title"
 					/>
 
-						<p>YURISTLARSIZ! QONUNIY! ARZON!</p>
+						<p>{t('header-description')}</p>
 						<div className="btns d-flex">
 							<a className="btn btn-primary" href="/#app/#tariflar">Tariflar</a>
 						</div>
