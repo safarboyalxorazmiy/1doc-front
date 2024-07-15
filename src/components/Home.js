@@ -38,7 +38,7 @@ const Home = () => {
 
 						<p>YURISTLARSIZ! QONUNIY! ARZON!</p>
 						<div className="btns d-flex">
-							<a className="btn btn-primary" href="#tariflar">Tariflar</a>
+							<a className="btn btn-primary" href="/#app/#tariflar">Tariflar</a>
 						</div>
 					</div>
 
