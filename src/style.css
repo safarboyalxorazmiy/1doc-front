@@ -45,6 +45,7 @@
   margin: 5px 0;
   padding: 10px 15px;
   border-radius: 4px;
+  transition: all 0.2s ease-in-out;
 }
 #sidebar .sidebar .logo {
   display: none;
@@ -92,7 +93,6 @@
   font-weight: bold;
 }
 #sidebar .sidebar-link:hover, #sidebar .sidebar-link.is-active {
-  font-family: "Gilroy-Bold ☞", sans-serif !important;
   font-weight: 600;
   color: #FFF !important;
   background-color: #0077B6;
@@ -105,6 +105,9 @@
 }
 #sidebar .sidebar-link:hover:nth-child(2n+3) svg, #sidebar .sidebar-link.is-active:nth-child(2n+3) svg {
   background: #6c5ecf;
+}
+#sidebar .sidebar-link.is-active {
+  font-family: "Gilroy-Bold ☞", sans-serif !important;
 }
 #sidebar .sidebar.collapse {
   width: 90px;

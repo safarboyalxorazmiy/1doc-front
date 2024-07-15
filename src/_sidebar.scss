@@ -47,7 +47,7 @@
       margin: 5px 0;
       padding: 10px 15px;
       border-radius: 4px;
-      // transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
     }
 
     .logo {
@@ -102,7 +102,6 @@
     &-link {
      &:hover,
      &.is-active {
-      font-family: "Gilroy-Bold ☞", sans-serif!important;
       font-weight: 600;
       color: #FFF!important;  
       background-color: $primary-color;
@@ -122,6 +121,10 @@
         background: #6c5ecf;
        }
       }
+     }
+
+     &.is-active {
+      font-family: "Gilroy-Bold ☞", sans-serif!important;
      }
     }
     &.collapse {
