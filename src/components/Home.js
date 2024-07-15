@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style.css';
 import Form from 'react-bootstrap/Form';
 import { Tabs, Tab, Row, Col, Carousel } from 'react-bootstrap';
+import { TypeAnimation } from 'react-type-animation';
 
 const Home = () => {
     return (
@@ -24,7 +25,17 @@ const Home = () => {
 					</nav>
 
 					<div className="header-content">
-						<h1>Murakkab yuridik hujjatlarni oson yaratish va tezkor imzolash</h1>
+					<TypeAnimation
+						sequence={[
+							'Murakkab yuridik hujjatlarni oson yaratish va tezkor imzolash',
+							1000
+						]}
+						wrapper="span"
+						speed={50}
+						repeat={Infinity}
+						className="header-title"
+					/>
+
 						<p>YURISTLARSIZ! QONUNIY! ARZON!</p>
 						<div className="btns d-flex">
 							<a className="btn btn-primary" href="#tariflar">Tariflar</a>
