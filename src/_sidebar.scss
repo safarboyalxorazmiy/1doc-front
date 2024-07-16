@@ -8,6 +8,59 @@
  --delay: 0s;
 }
 
+.sidebar-nav {
+  padding: 30px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .right {
+    justify-content: flex-end;
+    align-items: center;
+
+    .btn-outline-primary {
+      width: 200px;
+      height: 40px;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 12px;
+    }
+
+    .tel {
+      text-decoration: none;
+      color: $primary-color;
+      font-weight: bold;
+      font-family: "Gilroy-Bold ☞", sans-serif!important;
+      margin-left: 60px;
+    }
+
+    .dropdown {
+      margin-left: 20px;
+    }
+  }
+
+  a.logo-expand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+  
+    img {
+      width: 48px;
+    }
+  
+    h1 {
+      color: $primary-color;
+      font-size: 24px;
+      margin: 0;
+      font-family: "Gilroy-Bold ☞", sans-serif!important;
+      font-weight: bold;
+    }
+  }
+}
+
 #sidebar {
  max-width: 100%;
  max-height: 900px;
@@ -24,6 +77,58 @@
 }
 
 #sidebar {
+  .account-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $primary-color;
+
+    .account-name {
+      width: auto;  
+    }
+
+    .account-img {
+      width: 44px;
+      height: 44px;
+      background-color: $primary-color;
+      border-radius: 50%;
+    }
+  }
+
+  .balance-wrapper {
+    display: flex;
+    column-gap: 36px;
+    padding-top: 15px;
+
+    .balance-info {
+      width: auto;
+
+      .balance-title {
+        font-size: 16px;
+      }
+
+      .balance-value {
+        font-size: 24px;
+        font-weight: bold;
+
+        .balance-currency {
+          font-size: 15px;
+          font-weight: normal;
+        }
+      }
+    }
+
+    .btn {
+      width: 173px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 10px;
+      font-size: 14px;
+    }
+  }
+
   .sidebar {
     width: max-content;
     height: 100%;
@@ -81,23 +186,7 @@
       }
      }
     }
-    a.logo-expand {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-
-      img {
-        width: 48px;
-      }
-
-      h1 {
-        color: $primary-color;
-        font-size: 24px;
-        margin: 0;
-        font-family: "Gilroy-Bold ☞", sans-serif!important;
-        font-weight: bold;
-      }
-    }
+    
 
     &-link {
      &:hover,
@@ -199,7 +288,7 @@
   .side-wrapper {
     border-bottom: 1px solid var(--border-color);
     padding: 36px 0;
-    width: 245px;
+    width: 300px;
     & + & {
       border-bottom: none;
     }

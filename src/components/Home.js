@@ -6,7 +6,6 @@ import { Tabs, Tab, Row, Col, Carousel } from 'react-bootstrap';
 import { TypeAnimation } from 'react-type-animation';
 import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGlobe, faFlag, faFlagUsa } from '@fortawesome/free-solid-svg-icons';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'; 
 import { useState } from 'react';
 
