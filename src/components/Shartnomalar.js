@@ -11,22 +11,31 @@ const Shartnomalar = () => {
               </button>
             </div>
 
-            <div className="col btns">
-              <div className="btn-group" role="group">
-                <button type="button" className="btn btn-primary">
-                  Tibbiy xizmatlarni ko’rsatish
+            <div className="col folders">
+              <div className="folder-group" role="group">
+                <button type="button" className="folder">
+                  <img src="../assets/folder-icon.svg" alt="" />
+                  <span>Tibbiy xizmatlarni ko’rsatish</span>
                 </button>
-                <button type="button" className="btn btn-primary">
-                  Pulli ta’lim xizmatlar
+                
+                <button type="button" className="folder">
+                  <img src="../assets/folder-icon.svg" alt="" />
+                  <span>Pulli ta’lim xizmatlar</span>
                 </button>
-                <button type="button" className="btn btn-primary">
-                  Mahsulotlarni yetkazib berish
+
+                <button type="button" className="folder">
+                  <img src="../assets/folder-icon.svg" alt="" />
+                  <span>Mahsulotlarni yetkazib berish</span>
                 </button>
-                <button type="button" className="btn btn-primary">
-                  Xorijga ishga yuborish
+                
+                <button type="button" className="folder">
+                  <img src="../assets/folder-icon.svg" alt="" />
+                  <span>Xorijga ishga yuborish</span>
                 </button>
-                <button type="button" className="btn btn-primary">
-                  Xorijga ishga yuborish
+
+                <button type="button" className="folder">
+                  <img src="../assets/folder-icon.svg" alt="" />
+                  <span>Xorijga ishga yuborish</span>
                 </button>
               </div>
             </div>

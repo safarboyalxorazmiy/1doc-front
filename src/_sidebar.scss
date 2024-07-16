@@ -1176,12 +1176,12 @@
 
 .top-bar {
   column-gap: 15px;
-  height: 115px;
+  height: 180px;
   margin: 0;
   margin-top: 44px;
 
   .create-btn-wrapper {
-    width: 10%;
+    width: 15%;
     height: 100%;
     
     button.btn-outline-primary {
@@ -1191,11 +1191,11 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      row-gap: 5px;
+      row-gap: 10px;
   
       .plus-icon {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
       }
     }
   }
@@ -1231,12 +1231,12 @@
     padding: 0;
   }
 
-  .btns {
+  .folders {
     margin: 0;
     padding: 0;
     width: 55%;
     
-    .btn-group {
+    .folder-group {
       display: flex;
       column-gap: 15px;
       row-gap: 15px;
@@ -1246,15 +1246,24 @@
       flex-wrap: wrap;
       
       button {
+        background-color: #fff;
+        border: none;
         flex-grow: 0;
         width: 183px;
-        height: 50px;
+        height: 80px;
         font-size: 14px;
         font-family: "Gilroy-Bold ☞", sans-serif;
         text-align: left;
         display: flex;
+        flex-direction: column;
+        row-gap: 14px;
         align-items: center;
         border-radius: 4px!important;
+
+        span {
+          width: 100%;
+          text-align: center;
+        }
       }
     }
   }
