@@ -20,11 +20,6 @@ const Home = () => {
     setIsOpen(!isOpen);
   };
 
-	const forceRerender = () => {
-    this.forceUpdate(); // Avoid using forceUpdate unless absolutely necessary
-  };
-
-
     return (
 			<div>
 				<header>
@@ -53,12 +48,9 @@ const Home = () => {
 							)}
 						</div>
 
-
-
-
 						<div className="btns d-flex">
-							<button className="btn btn-primary">BEPUL BOSHLASH</button>
-							<button className="btn btn-outline-primary">KIRISH</button>
+							<button className="btn btn-primary start-btn">{t('start-btn')}</button>
+							<button className="btn btn-outline-primary login-btn">{t('login-btn')}</button>
 						</div>
 					</nav>
 
@@ -77,7 +69,7 @@ const Home = () => {
 
 						<p>{t('header-description')}</p>
 						<div className="btns d-flex">
-							<a className="btn btn-primary" href="/#app/#tariflar">Tariflar</a>
+							<a className="btn btn-primary prices-btn" href="/#app/#tariflar">{t('prices-btn')}</a>
 						</div>
 					</div>
 
@@ -86,7 +78,7 @@ const Home = () => {
 
 				<section className="tabs">
 					<Tabs defaultActiveKey="shartnomalar" id="uncontrolled-tab-example">
-						<Tab eventKey="shartnomalar" title="Shartnomalar">
+						<Tab eventKey="shartnomalar" title={t("shartnomalar")}>
 							<div className="tab-content mt-3">
 									<Row>
 											<Col md={5}>
@@ -94,17 +86,17 @@ const Home = () => {
 											</Col>
 											<Col md={6}>
 												<ul className="feature-list list-unstyled">
-													<li> Istalgan shartnomalarni mustaqil yarating.</li>
-													<li> 100 dan ziyod soha va yo'nalishlar bo'yicha yaratilgan shartnoma shablonlaridan foydalaning.</li>
-													<li> Talab qilingan ma'lumotlarni kiriting.</li>
-													<li> IMZO chekuvchilarni belgilang, shartnoma havolasini yuboring va qulay uslubda imzolang.</li>
+													<li>{t("shartnomalar-content-1")}</li>
+													<li>{t("shartnomalar-content-2")}</li>
+													<li>{t("shartnomalar-content-3")}</li>
+													<li>{t("shartnomalar-content-4")}</li>
 												</ul>
 											</Col>
 									</Row>
 								</div>
 						</Tab>
 						
-						<Tab eventKey="arizalar" title="Arizalar">
+						<Tab eventKey="arizalar" title={t("arizalar")}>
 							<div className="tab-content mt-3">
 								<Row>
 									<Col md={5}>
@@ -112,17 +104,17 @@ const Home = () => {
 									</Col>
 									<Col md={6}>
 										<ul className="feature-list list-unstyled">
-											<li> Istalgan tashkilotlarga rasmiy arizalar yuboring.</li>
-											<li> 50 dan ziyod tashkilot, vazirlik va qo'mitalar talab va nizomlari asosida yaratilgan shablonlardan foydalaning.</li>
-											<li> Talab qilingan ma'lumotlarni kiriting.</li>
-											<li> Qulay elektron imzolash turlaridan birini tanlang va imzolang.</li>
+											<li>{t("arizalar-content-1")}</li>
+											<li>{t("arizalar-content-2")}</li>
+											<li>{t("arizalar-content-3")}</li>
+											<li>{t("arizalar-content-4")}</li>
 										</ul>
 									</Col>
 								</Row>
 							</div>
 						</Tab>
 
-						<Tab eventKey="korporativ-hujjatlar" title="Korporativ Hujjatlar">
+						<Tab eventKey="korporativ-hujjatlar" title={t("korporativ-hujjatlar")}>
 							<div className="tab-content mt-3">
 								<Row>
 									<Col md={5}>
@@ -130,17 +122,17 @@ const Home = () => {
 									</Col>
 									<Col md={6}>
 										<ul className="feature-list list-unstyled">
-											<li> Korxonangiz faoliyatidagi ruxsatnoma, ishonchnoma, bayyonnoma, buyruqlar, dalolatnoma va barcha boshqa hujjatlarni elektron shakllantiring.</li>
-											<li> 50 dan ziyod soha va yo'nalishlar bo'yicha yaratilgan hujjatlar shablonlaridan foydalaning.</li>
-											<li> Talab qilingan ma'lumotlarni kiriting.</li>
-											<li> Imzo chekuvchilarni belgilang, hujjat havolasini yuboring va qulay uslubda imzolang.</li>
+											<li>{t("korporativ-hujjatlar-content-1")}</li>
+											<li>{t("korporativ-hujjatlar-content-2")}</li>
+											<li>{t("korporativ-hujjatlar-content-3")}</li>
+											<li>{t("korporativ-hujjatlar-content-4")}</li>
 										</ul>
 									</Col>
 								</Row>
 							</div>
 						</Tab>
 
-						<Tab eventKey="murojatlar" title="Murojatlar">
+						<Tab eventKey="murojaatlar" title={t("murojaatlar")}>
 							<div className="tab-content">
 								<Row>
 									<Col md={5}>
@@ -148,16 +140,16 @@ const Home = () => {
 									</Col>
 									<Col md={6}>
 										<ul className="feature-list list-unstyled">
-											<li> Mijozlaringiz, xodim va hamkorlaringizdan murojaatlarni tezkor qabul qilib oling.</li>
-											<li> Siz uchun individual taqdim etiladigan shablonlar asosida murojaatlarni qabul qiling va zudlik bilan javob bering</li>
-											<li> Javob berish bo'limi orqali hech qaysi murojaatlarni e'tibordan qoldirmang.</li>
+											<li>{t("murojaatlar-content-1")}</li>
+											<li>{t("murojaatlar-content-2")}</li>
+											<li>{t("murojaatlar-content-3")}</li>
 										</ul>
 									</Col>
 								</Row>
 							</div>
 						</Tab>
 
-						<Tab eventKey="imzo" title="IMZO">
+						<Tab eventKey="imzo" title={t("imzo")}>
 							<div className="tab-content">
 								<Row>
 									<Col md={5}>
@@ -165,16 +157,16 @@ const Home = () => {
 									</Col>
 									<Col md={6}>
 										<ul className="feature-list list-unstyled">
-											<li> Biznesingiz uzluksiz ishlashi uchun barcha hujjatlarni tezkor imzolang.</li>
-											<li> Xizmat safarida bo'lsangiz ham, barcha muhim hujjatlar siz bilan.</li>
-											<li> Tayyor Word yoki PDF formatidagi hujjatni yuklang va imzo chekuvchini belgilang.</li>
+											<li>{t("imzo-content-1")}</li>
+											<li>{t("imzo-content-2")}</li>
+											<li>{t("imzo-content-3")}</li>
 										</ul>
 									</Col>
 								</Row>
 							</div>
 						</Tab>
 
-						<Tab eventKey="sms" title="SMS Habarnoma">
+						<Tab eventKey="sms" title={t("sms")}>
 							<div className="tab-content">
 								<Row>
 									<Col md={5}>
@@ -182,15 +174,15 @@ const Home = () => {
 									</Col>
 									<Col md={6}>
 										<ul className="feature-list list-unstyled">
-											<li> Faoliyatingiz davomidagi yangiliklar, xabarlar va muhim ma'lumotlarni matn shaklda qisqa raqamlar orqali yuboring.</li>
-											<li> Ogohlantirish xatlari va boshqa muhim yuridik hujjatlarni PDF shaklda qisqa raqamlar orqali yuboring.</li>
+											<li>{t("sms-content-1")}</li>
+											<li>{t("sms-content-2")}</li>
 										</ul>
 									</Col>
 								</Row>
 							</div>
 						</Tab>
 
-						<Tab eventKey="ocr" title="OCR Redactor">
+						<Tab eventKey="ocr" title={t("ocr")}>
 							<div className="tab-content">
 								<Row>
 									<Col md={5}>
@@ -198,8 +190,8 @@ const Home = () => {
 									</Col>
 									<Col md={6}>
 										<ul className="feature-list list-unstyled">
-											<li> OCR (optical character recognition) texnologiyasi yordamida suratlardagi yozuvlarni matn holatiga keltiring.</li>
-											<li> Matnlarni qiyinchiliksiz tahrirlang, ko'chirib oling yoki Word formatida yuklab oling.</li>
+											<li>{t("ocr-content-1")}</li>
+											<li>{t("ocr-content-2")}</li>
 										</ul>
 									</Col>
 								</Row>
@@ -210,8 +202,8 @@ const Home = () => {
 				</section>
 
 				<section className="info-content d-flex justify-content-center align-items-center">
-					<h3>O'ZBEKISTON RESPUBLIKASI OLIY SUDI TOMONIDAN QAYD ETILGAN MA'LUMOTLARGA KO'RA 2023-YILDA O'ZBEKISTON IQTISODIY SUDLARI TOMONIDAN 271 748 TA ISHLAR KO'RIB CHIQILGAN HAMDA DAVOGARLAR FOYDASIGA 23,5 TRLN SO'M MIQDORDA MABLAG'LAR UNDIRUVI BO'YICHA QARORLAR CHIQARILGAN. DAVO ARIZALARINI SOXALAR VA MUAMMOLAR BO'YICHA GURUHLARGA BO'LINGANDA, SHARTNOMAVIY MUNOSABATLAR, XUSUSAN SHARTNOMA SHARTLARI ANIQ KO'RSATILMAGANLIGI , KO'P HOLATLARDA SHARTNOMALAR MUTLAQO MAVJUD EMASLIGI KO'RSATILGAN.</h3>
-					<a href="https://www.stat.uz">STAT.UZ</a>
+					<h3>{t("info-content")}</h3>
+					<a href="https://stat.sud.uz/">STAT.UZ</a>
 				</section>
 
 				<section className="second-slider">
@@ -222,7 +214,7 @@ const Home = () => {
 							prevIcon={<img src="assets/left-arrow.svg" />}
 							nextIcon={<img src="assets/right-arrow.svg" />}>
 								<Carousel.Item className="carousel-item">
-										<h1>MEHMONXONA VA HOTELLAR, DALA HOVLI VA SANATORIYALAR</h1>
+										<h1>{t("carousel-item-1__title")}</h1>
 
 										<Row className="item-content">
 											<Col md={6}>
@@ -230,10 +222,10 @@ const Home = () => {
 											</Col>
 											<Col md={6}>
 												<p>
-													Qisqa muddatga mehmonlarni joylashtirish va ko'chmas mulkni qisman yoki butunlay mo‘jiza ishonib topshirish bugungi kundagi eng xatarli bizneslardan biri bo'lib qolmoqda. “ZAKS” talabi bekor bo'lgandan keyin, xavf darajasi yanada ortadi.
+													{t("carousel-item-1__content-1")}
 													<br />
 													<br />
-													Shartnomangizni bir zumda tezkor, oson va qonuniy tasdiqlab mol-mulkingiz va shaxsiy reputatsiyangizni saqlab qoling.
+													{t("carousel-item-1__content-2")}
 												</p>
 											</Col>
 										</Row>
@@ -247,10 +239,12 @@ const Home = () => {
 												<img className="d-block" src="./assets/edu.svg" />
 											</Col>
 											<Col md={6}>
-												<p>Deyarli barcha ta’lim markazlariga o’quvchilarni o’z vasiylari(ota-onasi yaqin qarindoshi yoki buvi buvasi) olib keladi. Ta’lim markazlarida dastlabki 2 ta dars bepul bo’lganligi sababli shartnomalar ko’p holda voyaga yetmagan o’quvchilar tomonidan berib yuboriladi va shartnomaning huquqiy statusi boshqarilmaydi.
+												<p>
+													{t("carousel-item-2__content-1")}
 													<br />
 													<br />
-												1doc.uz bilan siz shartnomani onlayn istalgan joydan istalgan adresatga(vasiyga) aniq va oson yetkazasiz.</p>
+													{t("carousel-item-2__content-2")}
+												</p>
 											</Col>
 										</Row>
 								</Carousel.Item>
@@ -264,10 +258,10 @@ const Home = () => {
 											</Col>
 											<Col md={6}>
 												<p>
-													Iqtisodiyot tarmoqlari orasida eng ko'p huquqiy nizolar ko'tariladigan sohalardan biri bu qurilishdir. Qurilish hamisha kechikadi, rejalar unutiladi, sifat holati saqlanmaydi, yoki aksincha mijoz tomonidan mahsulotlar ta'minoti o'z vaqtida yetib kelmaydi. Hattoki qilingan ishlar uchun pul ham ola olmay qolishingiz mumkin.
+													{t("carousel-item-3__content-1")}
 													<br />
 													<br />
-													1doc.uz - sizga qurilish sohasi uchun kerakli barcha hujjatlar to'plami yoki, obyektingiz uchun maxsus shartnoma berishga tayyor.
+													{t("carousel-item-3__content-2")}
 												</p>
 											</Col>
 										</Row>
@@ -282,10 +276,10 @@ const Home = () => {
 											</Col>
 											<Col md={6}>
 												<p>
-													Siz qimmatbaho buyumingizni mijozga bo'lib to'lashga ishonib topshirmoqdasiz. Mijozning tolov majburiyatini ifodalash, xavf-xatarni jilovlash uchun maksimal himoyalangan shartnomalar taqdim eting..
+													{t("carousel-item-4__content-1")}
 													<br />
 													<br />
-													Qonuniy ravishda adresat bilan shartnomalar imzolang. Yetkazib berish xatlari va yo'l xatlarini yoqimli bonus sifatida qabul qilib oling.
+													{t("carousel-item-4__content-1")}
 												</p>
 											</Col>
 										</Row>
@@ -297,22 +291,22 @@ const Home = () => {
 					<Row className="d-flex justify-content-center align-items-end">
 						<Col md={4} className="d-flex justify-content-center align-items-center statistics-banner">
 							<p>
-								ISTALGAN SHARTNOMANI QULAY <b>YARATING</b> VA QULAY <b>TASDIQLANG</b>
+								{t("statistics-main-title")}
 							</p>
 						</Col>
 						<Col md={8} className="d-flex justify-content-center">
 							<Row className="stat-wrapper">
 								<Col md={4} className="stat-col d-flex justify-content-end align-items-end flex-column">
 									<h1>+1000</h1>
-									<h4>JAMI FOYDALANUVCHILAR</h4>
+									<h4>{t("statistics-title-1")}</h4>
 								</Col>
 								<Col md={4} className="stat-col d-flex justify-content-center align-items-end flex-column">
 									<h1>+100</h1>
-									<h4>PLATFORMADA MAVJUD SHARTNOMA SHABLONLARI</h4>
+									<h4>{t("statistics-title-2")}</h4>
 								</Col>
 								<Col md={4} className="stat-col d-flex justify-content-center align-items-end flex-column">
 									<h1>+50</h1>
-									<h4>PLATFORMADA MAVJUD ARIZA NAMUNALARI</h4>
+									<h4>{t("statistics-title-3")}</h4>
 								</Col>
 							</Row>
 						</Col>
@@ -320,14 +314,14 @@ const Home = () => {
 				</section>
 
 				<section className="signing-types">
-					<h2>IMZOLASH USULLARI</h2>
+					<h2>{t("signing-types-title")}</h2>
 					<Row className="signing-types-content">
 						<Col md={2} className="signing-types-col d-flex justify-content-center align-items-center flex-column">
 							<div className="signing-types-col-header d-flex justify-content-center align-items-center">
 								<img src="assets/faksimile-icon.svg" alt="Glass Icon" />
 							</div>
 							<div className="signing-types-col-body d-flex justify-content-center align-items-center flex-column">
-								<h4 className="text-center">FAKSIMILE</h4>
+								<h4 className="text-center">{t("signing-types-content-1")}</h4>
 							</div>
 						</Col>
 
@@ -336,7 +330,7 @@ const Home = () => {
 								<img src="assets/phone-icon.svg" alt="Law Icon" />
 							</div>
 							<div className="signing-types-col-body d-flex justify-content-center align-items-center flex-column">
-								<h4 className="text-center">SMS</h4>
+								<h4 className="text-center">{t("signing-types-content-2")}</h4>
 							</div>
 						</Col>
 
@@ -345,7 +339,7 @@ const Home = () => {
 								<img src="assets/telegram-icon.svg" alt="Signature Icon" />
 							</div>
 							<div className="signing-types-col-body d-flex justify-content-center align-items-center flex-column">
-								<h4 className="text-center">TELEGRAM</h4>
+								<h4 className="text-center">{t("signing-types-content-3")}</h4>
 							</div>
 						</Col>
 						
@@ -354,7 +348,7 @@ const Home = () => {
 								<img src="assets/face-icon.svg" alt="Signature Icon" />
 							</div>
 							<div className="signing-types-col-body d-flex justify-content-center align-items-center flex-column">
-								<h4 className="text-center">FACE ID</h4>
+								<h4 className="text-center">{t("signing-types-content-4")}</h4>
 							</div>
 						</Col>
 						
@@ -363,14 +357,14 @@ const Home = () => {
 								<img src="assets/eimzo-icon.svg" alt="Signature Icon" />
 							</div>
 							<div className="signing-types-col-body d-flex justify-content-center align-items-center flex-column">
-								<h4 className="text-center">E-IMZO</h4>
+								<h4 className="text-center">{t("signing-types-content-5")}</h4>
 							</div>
 						</Col>
 					</Row>
 				</section>
 
 				<section className="companies">
-					<h2 className='text-center'>BIZ BILAN BIRGA</h2>
+					<h2 className='text-center'>{t("componies-title")}</h2>
 
 					<div className="companies-content d-flex">
 						<div className="company"></div>
@@ -429,20 +423,20 @@ const Home = () => {
 				<a name="tariflar"></a>
 
 				<section className="pricing">
-					<h2 className="text-center">O'Z TARIFINGIZNI TANLANG</h2>
+					<h2 className="text-center">{t("pricing-title")}</h2>
 					
 					<div className="pricing-content d-flex justify-content-center align-items-center">
 						<div className="price-box">
-							<h4>YaTT 50</h4>
+							<h4>{t("price-box-1__title")}</h4>
 							<h3>149.000 <span>uzs</span></h3>
-							<p>50 dona hujjatlar</p>
-							<p>50 dona sms-habarnoma</p>
+							<p>{t("price-box-1__content-1")}</p>
+							<p>{t("price-box-1__content-2")}</p>
 
 							<Form className="price-types">
 								<div className="type-1">
 									<Form.Check
 										inline
-										label="1 oy"
+										label={`1 ${t("month")}`}
 										name="group2"
 										type={'radio'}
 										id={`inline-${'radio'}-1`}
@@ -453,7 +447,7 @@ const Home = () => {
 								<div className="type-2">
 									<Form.Check
 										inline
-										label="6 oy"
+										label={`6 ${t("month")}`}
 										name="group2"
 										type={'radio'}
 										id={`inline-${'radio'}-2`}
@@ -463,7 +457,7 @@ const Home = () => {
 								<div className="type-3">
 									<Form.Check
 										inline
-										label="12 oy"
+										label={`12 ${t("month")}`}
 										name="group2"
 										type={'radio'}
 										id={`inline-${'radio'}-3`}
@@ -471,20 +465,20 @@ const Home = () => {
 								</div>
 							</Form>
 
-							<button className="btn btn-primary">Tanlash</button>
+							<button className="btn btn-primary">{t("price-box-btn-text")}</button>
 						</div>
 						
 						<div className="price-box">
-							<h4>BIZNES 250</h4>
+							<h4>{t("price-box-2__title")}</h4>
 							<h3>399.000 <span>uzs</span></h3>
-							<p>250 dona hujjatlar</p>
-							<p>250 dona sms-habarnoma</p>
+							<p>{t("price-box-2__content-1")}</p>
+							<p>{t("price-box-2__content-2")}</p>
 
 							<Form className="price-types">
 								<div className="type-1">
 									<Form.Check
 										inline
-										label="1 oy"
+										label={`1 ${t("month")}`}
 										name="group2"
 										type={'radio'}
 										id={`inline-${'radio'}-1`}
@@ -495,7 +489,7 @@ const Home = () => {
 								<div className="type-2">
 									<Form.Check
 										inline
-										label="6 oy"
+										label={`6 ${t("month")}`}
 										name="group2"
 										type={'radio'}
 										id={`inline-${'radio'}-2`}
@@ -505,7 +499,7 @@ const Home = () => {
 								<div className="type-3">
 									<Form.Check
 										inline
-										label="12 oy"
+										label={`12 ${t("month")}`}
 										name="group2"
 										type={'radio'}
 										id={`inline-${'radio'}-3`}
@@ -513,20 +507,20 @@ const Home = () => {
 								</div>
 							</Form>
 
-							<button className="btn btn-primary">Tanlash</button>
+							<button className="btn btn-primary">{t("price-box-btn-text")}</button>
 						</div>
 
 						<div className="price-box">
-							<h4>SENAT 500</h4>
+							<h4>{t("price-box-3__title")}</h4>
 							<h3>500.000 <span>uzs</span></h3>
-							<p>500 dona hujjatlar</p>
-							<p>500 dona sms-habarnoma</p>
+							<p>{t("price-box-3__content-1")}</p>
+							<p>{t("price-box-3__content-2")}</p>
 
 							<Form className="price-types">
 								<div className="type-1">
 									<Form.Check
 										inline
-										label="1 oy"
+										label={`1 ${t("month")}`}
 										name="group3"
 										type={'radio'}
 										id={`inline-${'radio'}-2`}
@@ -537,7 +531,7 @@ const Home = () => {
 								<div className="type-2">
 									<Form.Check
 										inline
-										label="6 oy"
+										label={`6 ${t("month")}`}
 										name="group3"
 										type={'radio'}
 										id={`inline-${'radio'}-2`}
@@ -547,7 +541,7 @@ const Home = () => {
 								<div className="type-3">
 									<Form.Check
 										inline
-										label="12 oy"
+										label={`12 ${t("month")}`}
 										name="group3"
 										type={'radio'}
 										id={`inline-${'radio'}-2`}
@@ -555,20 +549,20 @@ const Home = () => {
 								</div>
 							</Form>
 
-							<button className="btn btn-primary">Tanlash</button>
+							<button className="btn btn-primary">{t("price-box-btn-text")}</button>
 						</div>
 
 						<div className="price-box">
-							<h4>President</h4>
+							<h4>{t("price-box-4__title")}</h4>
 							<h3>750.000 <span>uzs</span></h3>
-							<p>1000 dona hujjatlar</p>
-							<p>1000 dona sms-xabarnoma</p>
+							<p>{t("price-box-4__content-1")}</p>
+							<p>{t("price-box-4__content-2")}</p>
 
 							<Form className="price-types">
 								<div className="type-1">
 									<Form.Check
 										inline
-										label="1 oy"
+										label={`1 ${t("month")}`}
 										name="group4"
 										type={'radio'}
 										id={`inline-${'radio'}-3`}
@@ -579,7 +573,7 @@ const Home = () => {
 								<div className="type-2">
 									<Form.Check
 										inline
-										label="6 oy"
+										label={`6 ${t("month")}`}
 										name="group4"
 										type={'radio'}
 										id={`inline-${'radio'}-3`}
@@ -589,7 +583,7 @@ const Home = () => {
 								<div className="type-3">
 									<Form.Check
 										inline
-										label="12 oy"
+										label={`12 ${t("month")}`}
 										name="group4"
 										type={'radio'}
 										id={`inline-${'radio'}-3`}
@@ -597,7 +591,7 @@ const Home = () => {
 								</div>
 							</Form>
 
-							<button className="btn btn-primary">Tanlash</button>
+							<button className="btn btn-primary">{t("price-box-btn-text")}</button>
 						</div>
 					</div>
 				</section>
@@ -610,36 +604,37 @@ const Home = () => {
 
 					<div className="content">
 						<h2>1doc.uz</h2>
-						<h4>Barcha hujjatlarga bir yechim!</h4>
+						<h4>{t("banner-text")}</h4>
 					</div>
 				</section>
 
 				<footer>
 					<Row>
 						<Col md={3}>
-							<h4>Biz haqimizda</h4>
-							<ul>
-								<li><a href="">Ma'lumotlarning maxviylik siyosati</a></li>
-								<li><a href="">Ommaviy oferta</a></li>
-								<li><a href="">Rahbariyat</a></li>
-								<li><a href="">Shartnomalar</a></li>
-								<li><a href="">Arizalar</a></li>
+						<h4>{t("footer-title-1")}</h4>
+
+						<ul>
+								<li><a href="">{t("footer-link-1")}</a></li>
+								<li><a href="">{t("footer-link-2")}</a></li>
+								<li><a href="">{t("footer-link-3")}</a></li>
+								<li><a href="">{t("footer-link-4")}</a></li>
+								<li><a href="">{t("footer-link-5")}</a></li>
 							</ul>
 						</Col>
 
 						<Col md={6}>
-							<h4>Qonuniylik asoslari</h4>
+							<h4>{t("footer-title-2")}</h4>
 
 							<ul>
-								<li><a href="http://lex.uz//docs/6213382">“Elektron tijorat ” toʼgʼrisidagi “Oʼzbekiston Respublikasi Qonuni.</a></li>
-								<li><a href="http://lex.uz//docs/6234904">Elektron imzo toʼgʼrisidagi” “Oʼzbekiston Respublikasi Qonuni.</a></li>
-								<li><a href="http://lex.uz//docs/6840502">Tadbirkorlik subʼektlariga xalqaro platformalar orqali raqamli texnologiyalar uchun qulay shart-sharoitlar yaratish chora tadbirlari toʼgʼrisidagi ”gi qarori.</a></li>
-								<li><a href="http://lex.uz//ru/docs/-3336169">“Jismoniy va yuridik shaxslarning murojaatlari to'g'risiga”gi Qonun</a></li>
+								<li><a href="http://lex.uz//docs/6213382">{t("footer-link-6")}</a></li>
+								<li><a href="http://lex.uz//docs/6234904">{t("footer-link-7")}</a></li>
+								<li><a href="http://lex.uz//docs/6840502">{t("footer-link-8")}</a></li>
+								<li><a href="http://lex.uz//ru/docs/-3336169">{t("footer-link-9")}</a></li>
 							</ul>
 						</Col>
 						
 						<Col md={3}>
-							<h4>Aloqa</h4>
+							<h4>{t("footer-title-3")}</h4>
 
 							<ul>
 								<li><a href="tel:+998917972385">+998 91 797 23 85</a></li>
