@@ -2231,6 +2231,18 @@ main .main-content p.reminder a {
   display: block;
 }
 
+.dropdown-content a.active {
+  background-color: #f1f1f1;
+}
+
+.dropdown-content a.active:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-content a:not(.active):hover {
+  cursor: pointer;
+}
+
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #f1f1f1;
