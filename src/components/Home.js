@@ -232,7 +232,7 @@ const Home = () => {
 								</Carousel.Item>
 
 								<Carousel.Item>
-										<h1>O'quv yurtlari kasb hunar va ta'lim markazlari.</h1>
+									<h1>{t("carousel-item-2__title")}</h1>
 
 										<Row className='item-content'>
 											<Col md={6}>
@@ -250,7 +250,7 @@ const Home = () => {
 								</Carousel.Item>
 
 								<Carousel.Item>
-										<h1>Ta'mirlash tiklash va qurilish ishlari bilan shug'illanuvchi ustalan brigadasi yoki katta qurilish kompaniyalari.</h1>
+									<h1>{t("carousel-item-3__title")}</h1>
 
 										<Row className='item-content'>
 											<Col md={6}>
@@ -268,7 +268,7 @@ const Home = () => {
 								</Carousel.Item>
 
 								<Carousel.Item>
-										<h1>Bo'lib to'lash va mukromoliya tashkilotlari, lambard va kredit byurolari.</h1>
+									<h1>{t("carousel-item-4__title")}</h1>
 
 										<Row className='item-content'>
 											<Col md={6}>

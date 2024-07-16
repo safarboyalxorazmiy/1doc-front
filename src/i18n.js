@@ -48,6 +48,10 @@ const resources = {
       "info-content": "O‘ZBEKISTON RESPUBLIKASI OLIY SUDI TOMONIDAN QAYD ETILGAN MA’LUMOTLARGA KO‘RA 2023-YILDA O‘ZBEKISTON IQTISODIY SUDLARI TOMONIDAN 271 748 TA ISHLAR KO‘RIB CHIQILGAN HAMDA DA’VOGARLAR FOYDASIGA 23,5 TRLN SO‘M MIQDORDA MABLAG‘LAR UNDIRUVI BO‘YICHA QARORLAR CHIQARILGAN. DAVO ARIZALARINI SOHALAR VA MUAMMOLAR BO‘YICHA GURUHLARGA BO‘LINGANDA, SHARTNOMAVIY MUNOSABATLAR, XUSUSAN SHARTNOMA SHARTLARI ANIQ KO‘RSATILMAGANLIGI , KO‘P HOLATLARDA SHARTNOMALAR MUTLAQO MAVJUD EMASLIGI KO‘RSATILGAN.",
 
       "carousel-item-1__title": "MEHMONXONA VA HOTELLAR,  DALA HOVLI VA SANATORIYALAR",
+      "carousel-item-2__title": "O'quv yurtlari kasb hunar va ta'lim markazlari.",
+      "carousel-item-3__title": "Ta'mirlash tiklash va qurilish ishlari bilan shug'illanuvchi ustalan brigadasi yoki katta qurilish kompaniyalari.",
+      "carousel-item-4__title": "Bo'lib to'lash va mukromoliya tashkilotlari, lambard va kredit byurolari.",
+      
       "carousel-item-1__content-1": `Qisqa muddatga mehmonlarni joylashtirish va ko'chmas mulkni qisman yoki butunlay mo‘jiza ishonib topshirish bugungi kundagi eng xatarli bizneslardan biri bo'lib qolmoqda. “ZAKS” talabi bekor bo'lgandan keyin, xavf darajasi yanada ortadi.`,
       "carousel-item-1__content-2": "Shartnomangizni bir zumda tezkor, oson va qonuniy tasdiqlab mol-mulkingiz va shaxsiy reputatsiyangizni saqlab qoling.",
       
@@ -125,7 +129,7 @@ const resources = {
       "shartnomalar": "шартномалар",
       "arizalar": "аризалар",
       "korporativ-hujjatlar": "корпоратив ҳужжатлар",
-      "murojatlar": "мурожатлар",
+      "murojaatlar": "мурожаaтлар",
       "imzo": "имзо",
       "sms": "СМС Ҳабарнома",
       "ocr": "OCR REDACTOR",
@@ -162,9 +166,12 @@ const resources = {
       "info-content": "ЎЗБЕКИСТОН РЕСПУБЛИКАСИ ОЛИЙ СУДИ ТОМОНИДАН ҚАЙД ЭТИЛГАН МАЪЛУМОТЛАРГА КЎРА 2023-ЙИЛДА ЎЗБЕКИСТОН ИҚТИСОДИЙ СУДЛАРИ ТОМОНИДАН 271 748 ТА ИШЛАР КЎРИБ ЧИҚИЛГАН ҲАМДА ДАЪВОГАРЛАР ФОЙДАСИГА 23,5 ТРЛН СЎМ МИҚДОРДА МАБЛАҒЛАР УНДИРУВИ БЎЙИЧА ҚАРОРЛАР ЧИҚАРИЛГАН. ДАВО АРИЗАЛАРИНИ СОҲАЛАР ВА МУАММОЛАР БЎЙИЧА ГУРУҲЛАРГА БЎЛИНГАНДА, ШАРТНОМАВИЙ МУНОСАБАТЛАР, ХУСУСАН ШАРТНОМА ШАРТЛАРИ АНИҚ КЎРСАТИЛМАГАНЛИГИ , КЎП ҲОЛАТЛАРДА ШАРТНОМАЛАР МУТЛАҚО МАВЖУД ЭМАСЛИГИ КЎРСАТИЛГАН.",
 
 
-      "carousel-item-1__title": "МEҲМОНХОНА ВА ҲОТEЛЛАР, ДАЛА ҲОВЛИ ВА САНАТОРИЯЛАР",
+      "carousel-item-1__title": "МЕҲМОНХОНА ВА ҲОТЕЛЛАР,  ДАЛА ҲОВЛИ ВА САНАТОРИЯЛАР",
+      "carousel-item-2__title": "Ўқув юртлари касб ҳунар ва таълим марказлари.",
+      "carousel-item-3__title": "Таъмирлаш тиклаш ва қурилиш ишлари билан шуғилланувчи усталан бригадаси ёки катта қурилиш компаниялари.",
+      "carousel-item-4__title": "Бўлиб тўлаш ва мукромолия ташкилотлари, ламбард ва кредит бюролари.",
 
-    
+
       "carousel-item-1__content-1": 'Қисқа муддатга меҳмонларни жойлаштириш ва кўчмас мулкни қисман ёки бутунлай мўъжиза ишониб топшириш бугунги кундаги энг хатарли бизнеслардан бири бўлиб қолмоқда. “ЗАКС” талаби бекор бўлгандан кейин, хавф даражаси янада ортади.',
       "carousel-item-1__content-2": "Шартномангизни бир зумда тезкор, осон ва қонуний тасдиқлаб мол-мулкингиз ва шахсий репутациянгизни сақлаб қолинг.",
       
