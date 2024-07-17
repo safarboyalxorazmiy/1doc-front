@@ -1426,9 +1426,35 @@
   bottom: -80px;
 }
 
-
-
-
 .settings-icon {
   fill: var(--primary-color);
+}
+
+.qrcode-icon {
+  fill: var(--primary-color);
+}
+
+.murojaatlar-page {
+  .top-bar {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 15px;
+    height: 100px;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    .qrcode {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      row-gap: 10px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
 }
