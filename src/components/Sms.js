@@ -2,44 +2,34 @@ import { FaPlus, FaSearch, FaFileExcel } from 'react-icons/fa';
 
 const Sms = () => {
   return (
-    <div>
+    <div className='sms-page'>
       <div className="row align-items-center top-bar">
-            <div className="col-auto create-btn-wrapper">
-              <button className="btn btn-outline-primary">
-                <img className="plus-icon" src="/assets/plus-icon.svg" />
-                <span>YARATISH</span>
-              </button>
-            </div>
+          <div className="col-auto upload-btn-wrapper">
+            <button className="btn btn-outline-primary">
+              <span>Fayl yuklang</span>
+            </button>
+          </div>
 
-            <div className="col btns">
-              <div className="btn-group" role="group">
-                <button type="button" className="btn btn-primary">
-                  Tibbiy xizmatlarni ko’rsatish
-                </button>
-                <button type="button" className="btn btn-primary">
-                  Pulli ta’lim xizmatlar
-                </button>
-                <button type="button" className="btn btn-primary">
-                  Mahsulotlarni yetkazib berish
-                </button>
-                <button type="button" className="btn btn-primary">
-                  Xorijga ishga yuborish
-                </button>
-                <button type="button" className="btn btn-primary">
-                  Xorijga ishga yuborish
-                </button>
-              </div>
+          <div className="col number-wrapper">
+            <span className="title">Qabul qilib oluvchilar raqamini kiriting.</span>
+            <div className="number-group" role="group">
+              <input type="text" />
+              <button className='btn btn-primary'>Yuborish</button>
             </div>
-            
-            <div className="col-auto search-wrapper">
-              <div className="input-group">
-                <input type="text" className="form-control" placeholder="Qidirish" />
-                <button className="btn btn-outline-secondary" type="button">
-                  <FaSearch />
-                </button>
+          </div>
+          
+          <div className="col-auto message-wrapper">
+            <div className="input-group message">
+              <textarea cols="30" rows="10" className="message-input" placeholder='Xabar matnini kiriting 250ta harfgacha'></textarea>
+
+              <span  className="title">Qabul qilib oluvchilar raqamini kiriting.</span>
+              <div className="number-form-wrapper">
+                <input type="text" />
+                <button className='btn btn-primary'>Yuborish</button>
               </div>
             </div>
           </div>
+      </div>
 
       <table className="table table-bordered mt-4">
         <thead>
