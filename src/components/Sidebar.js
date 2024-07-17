@@ -11,6 +11,7 @@ import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'; 
 import Locker from './Locker';
+import Imzo from './Imzo';
 
 const Sidebar = () => {
   const [activeLink, setActiveLink] = useState('shartnomalar');
@@ -332,7 +333,7 @@ const Sidebar = () => {
             activeLink === 'arizalar' ? <Arizalar /> :
             activeLink === 'murojaatlar' ? <Murojaatlar /> :
             activeLink === 'hujjatlar' ? <Hujjatlar /> :
-            activeLink === 'imzoga' ? <Hujjatlar /> :
+            activeLink === 'imzoga' ? <Imzo /> :
             activeLink === 'sms' ? <Sms /> :
             activeLink === 'pochta' ? <Pochta /> :
             activeLink === 'ocr' ? <OCR /> :

@@ -2,44 +2,58 @@ import { FaPlus, FaSearch, FaFileExcel } from 'react-icons/fa';
 
 const Imzo = () => {
   return (
-    <div>
+    <div className="imzo-page">
       <div className="row align-items-center top-bar">
-            <div className="col-auto create-btn-wrapper">
-              <button className="btn btn-outline-primary">
-                <img className="plus-icon" src="/assets/plus-icon.svg" />
-                <span>YARATISH</span>
+          <div className="col-auto upload-btn-wrapper">
+            <button className="btn btn-outline-primary">
+              <span>Fayl yuklang</span>
+            </button>
+          </div>
+
+          <div className="col signature-count-wrapper">
+            <span  className="title">Imzolovchilar soni</span>
+            <div className="signature-count-group" role="group">
+              <button type="button" className="signature-count">
+                <span>1 nafar</span>
+              </button>
+              
+              <button type="button" className="signature-count">
+                <span>2 nafar</span>
+              </button>
+
+              <button type="button" className="signature-count">
+                <span>3 nafar</span>
+              </button>
+              
+              <button type="button" className="signature-count">
+                <span>4 va undan ko'p</span>
               </button>
             </div>
-
-            <div className="col btns">
-              <div className="btn-group" role="group">
-                <button type="button" className="btn btn-primary">
-                  Tibbiy xizmatlarni ko’rsatish
-                </button>
-                <button type="button" className="btn btn-primary">
-                  Pulli ta’lim xizmatlar
-                </button>
-                <button type="button" className="btn btn-primary">
-                  Mahsulotlarni yetkazib berish
-                </button>
-                <button type="button" className="btn btn-primary">
-                  Xorijga ishga yuborish
-                </button>
-                <button type="button" className="btn btn-primary">
-                  Xorijga ishga yuborish
-                </button>
+          </div>
+          
+          <div className="col-auto signature-info-wrapper">
+            <div className="input-group signature-info">
+              <span className="title">Imzolovchilar haqida ma'lumotni kiriting</span>
+              <div className="info">
+                <span>1</span>
+                <input type="text" placeholder="Lavozim" />
+                <input type="text" placeholder="Ism familiya" />
+                <input type="text" placeholder="Telefon raqami" />
               </div>
-            </div>
-            
-            <div className="col-auto search-wrapper">
-              <div className="input-group">
-                <input type="text" className="form-control" placeholder="Qidirish" />
-                <button className="btn btn-outline-secondary" type="button">
-                  <FaSearch />
-                </button>
+              <div className="info">
+                <span>2</span>
+                <input type="text" placeholder="Lavozim" />
+                <input type="text" placeholder="Ism familiya" />
+                <input type="text" placeholder="Telefon raqami" />
+              </div>
+
+              <div className='btns'>
+                <button>Ko'rish</button>
+                <button>Yuborish</button>
               </div>
             </div>
           </div>
+      </div>
 
       <table className="table table-bordered mt-4">
         <thead>
