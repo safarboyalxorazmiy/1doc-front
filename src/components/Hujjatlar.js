@@ -1,6 +1,9 @@
 import { FaPlus, FaSearch, FaFileExcel } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 const Hujjatlar = () => {
+	const { t, i18n } = useTranslation();
+
   return (
     <div>
       <div className="row align-items-center top-bar">
@@ -18,7 +21,7 @@ const Hujjatlar = () => {
                   </defs>
                 </svg>
 
-                <span>YARATISH</span>
+                <span>{t("create-btn-text")}</span>
               </button>
             </div>
 
@@ -63,7 +66,7 @@ const Hujjatlar = () => {
             
             <div className="col-auto search-wrapper">
               <div className="input-group">
-                <input type="text" className="form-control" placeholder="Qidirish" />
+                <input type="text" className="form-control" placeholder={t("searchbar-text")} />
                 <button className="btn btn-outline-secondary" type="button">
                   <FaSearch />
                 </button>

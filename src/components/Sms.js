@@ -1,31 +1,34 @@
-import { FaPlus, FaSearch, FaFileExcel } from 'react-icons/fa';
+import { FaFileExcel } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 const Sms = () => {
+	const { t, i18n } = useTranslation();
+
   return (
     <div className='sms-page'>
       <div className="row align-items-center top-bar">
           <div className="col-auto upload-btn-wrapper">
             <button className="btn btn-outline-primary">
-              <span>Fayl yuklang</span>
+              <span>{t("upload-btn-text")}</span>
             </button>
           </div>
 
           <div className="col number-wrapper">
-            <span className="title">Qabul qilib oluvchilar raqamini kiriting.</span>
+            <span className="title">{t("number-wrapper-title")}</span>
             <div className="number-group" role="group">
               <input type="text" />
-              <button className='btn btn-primary'>Yuborish</button>
+              <button className='btn btn-primary'>{t("send-btn-text")}</button>
             </div>
           </div>
           
           <div className="col-auto message-wrapper">
             <div className="input-group message">
-              <textarea cols="30" rows="10" className="message-input" placeholder='Xabar matnini kiriting 250ta harfgacha'></textarea>
+              <textarea cols="30" rows="10" className="message-input" placeholder={t("message-textarea-placeholder")}></textarea>
 
-              <span  className="title">Qabul qilib oluvchilar raqamini kiriting.</span>
+              <span  className="title">{t("number-wrapper-title")}</span>
               <div className="number-form-wrapper">
                 <input type="text" />
-                <button className='btn btn-primary'>Yuborish</button>
+                <button className='btn btn-primary'>{t("send-btn-text")}</button>
               </div>
             </div>
           </div>

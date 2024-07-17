@@ -124,7 +124,7 @@ const Sidebar = () => {
           <div className="right d-flex">
             <div className="theme" onMouseEnter={() => setThemeLinkHovered(true)} onMouseLeave={() => setThemeLinkHovered(false)}>
               <button className='theme-btn btn btn-outline-primary'>
-                <span>Rangni o’zgartirish</span>
+                <span>{t("theme-btn-text")}</span>
                 
                 <svg width="17" height="17" className="theme-icon" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14.6371 2.62381C14.5864 2.5706 14.5351 2.51787 14.483 2.46567C14.4773 2.45993 14.4709 2.45497 14.465 2.44941C12.8644 0.869682 10.7471 0 8.4959 0C6.22544 0 4.09093 0.884151 2.48555 2.48965C-0.828518 5.80378 -0.828518 11.1963 2.48555 14.5104C4.09099 16.1159 6.2255 17.0001 8.4959 17.0001C10.7663 17.0001 12.9009 16.1159 14.5063 14.5104C17.7761 11.2406 17.8195 5.94769 14.6371 2.62381ZM3.75379 3.75794C5.02046 2.49126 6.70458 1.79365 8.4959 1.79365C9.9728 1.79365 11.3765 2.26825 12.5338 3.14457L3.14006 12.5361C1.15873 9.91041 1.36297 6.14882 3.75379 3.75794Z" />
@@ -216,16 +216,16 @@ const Sidebar = () => {
           </div>
           <div className="balance-wrapper">
             <div className="balance-info">
-              <span className="balance-title">Balans:</span>
+              <span className="balance-title">{t("balance-title")}</span>
               
               <div className="balance-value">
                 0.00
-                <span className="balance-currency"> so’m</span>
+                <span className="balance-currency"> {t("balance-currency")}</span>
               </div>
             </div>
 
             <button className='btn btn-primary'>
-              Hisobni to'ldirish
+              {t("balance-btn")}
 
               <img src="assets/wallet.svg" alt="" />
             </button>
@@ -241,7 +241,7 @@ const Sidebar = () => {
                 onMouseLeave={() => handleLinkHover("")}
               >
                 <img src={`${activeLink === 'shartnomalar' || hoveredLink === 'shartnomalar' ? 'assets/sidebar/document-light.svg' : 'assets/sidebar/document.svg'}`} width={30} height={30}  alt="" />
-                Shartnomalar
+                {t("sidebar-link-1")}
               </a>
               <a
                 className={`sidebar-link arizalar ${activeLink === 'arizalar' ? 'is-active' : ''}`}
@@ -250,7 +250,7 @@ const Sidebar = () => {
                 onMouseLeave={() => handleLinkHover("")}
               >
                 <img src={`${activeLink === 'arizalar' || hoveredLink === 'arizalar' ? 'assets/sidebar/arizalar-light.svg' : 'assets/sidebar/arizalar.svg'}`} width={30} height={30}  alt="" />
-                Arizalar
+                {t("sidebar-link-2")}
               </a>
               <a 
                 className={`sidebar-link murojaatlar ${activeLink === 'murojaatlar' ? 'is-active' : ''}`} 
@@ -259,7 +259,7 @@ const Sidebar = () => {
                 onMouseLeave={() => handleLinkHover("")}
               >
                 <img src={`${activeLink === 'murojaatlar' || hoveredLink === 'murojaatlar' ? 'assets/sidebar/murojaatlar-light.svg' : 'assets/sidebar/murojaatlar.svg'}`} width={30} height={30}  alt="" />
-                Murojaatlar
+                {t("sidebar-link-3")}
               </a>
               <a 
                 className={`sidebar-link hujjatlar ${activeLink === 'hujjatlar' ? 'is-active' : ''}`} 
@@ -268,7 +268,7 @@ const Sidebar = () => {
                 onMouseLeave={() => handleLinkHover("")}
               >
                 <img src={`${activeLink === 'hujjatlar' || hoveredLink === 'hujjatlar' ? 'assets/sidebar/hujjatlar-light.svg' : 'assets/sidebar/hujjatlar.svg'}`} width={30} height={30}  alt="" />
-                Boshqa hujjatlar
+                {t("sidebar-link-4")}
               </a>
               <a 
                 className={`sidebar-link imzoga ${activeLink === 'imzoga' ? 'is-active' : ''}`} 
@@ -277,7 +277,7 @@ const Sidebar = () => {
                 onMouseLeave={() => handleLinkHover("")}
               >
                 <img src={`${activeLink === 'imzoga' || hoveredLink === 'imzoga' ? 'assets/sidebar/imzo-light.svg' : 'assets/sidebar/imzo.svg'}`} width={30} height={30}  alt="" />
-                Imzoga
+                {t("sidebar-link-5")}
               </a>
               <a 
                 className={`sidebar-link sms ${activeLink === 'sms' ? 'is-active' : ''}`} 
@@ -286,7 +286,7 @@ const Sidebar = () => {
                 onMouseLeave={() => handleLinkHover("")}
               >
                 <img src={`${activeLink === 'sms' || hoveredLink === 'sms' ? 'assets/sidebar/sms-light.svg' : 'assets/sidebar/sms.svg'}`} width={30} height={30}  alt="" />
-                SMS-xabarnoma
+                {t("sidebar-link-6")}
               </a>
             </div>
           </div>
@@ -301,7 +301,7 @@ const Sidebar = () => {
                 onMouseLeave={() => handleLinkHover("")}
               >
                 <img src={`${activeLink === 'pochta' || hoveredLink === 'pochta' ? 'assets/sidebar/gmail-light.svg' : 'assets/sidebar/gmail.svg'}`} width={30} height={30}  alt="" />
-                Korporativ pochta
+                {t("sidebar-link-7")}
               </a>
 
               <a 

@@ -52,7 +52,7 @@ const resources = {
       "carousel-item-3__title": "Ta'mirlash tiklash va qurilish ishlari bilan shug'illanuvchi ustalan brigadasi yoki katta qurilish kompaniyalari.",
       "carousel-item-4__title": "Bo'lib to'lash va mukromoliya tashkilotlari, lambard va kredit byurolari.",
       
-      "carousel-item-1__content-1": `Qisqa muddatga mehmonlarni joylashtirish va ko'chmas mulkni qisman yoki butunlay mo‘jiza ishonib topshirish bugungi kundagi eng xatarli bizneslardan biri bo'lib qolmoqda. “ZAKS” talabi bekor bo'lgandan keyin, xavf darajasi yanada ortadi.`,
+      "carousel-item-1__content-1": "Qisqa muddatga mehmonlarni joylashtirish va ko'chmas mulkni qisman yoki butunlay mo‘jiza ishonib topshirish bugungi kundagi eng xatarli bizneslardan biri bo'lib qolmoqda. “ZAKS” talabi bekor bo'lgandan keyin, xavf darajasi yanada ortadi.",
       "carousel-item-1__content-2": "Shartnomangizni bir zumda tezkor, oson va qonuniy tasdiqlab mol-mulkingiz va shaxsiy reputatsiyangizni saqlab qoling.",
       
       "carousel-item-2__content-1": "Deyarli barcha ta’lim markazlariga o’quvchilarni o’z vasiylari(ota-onasi yaqin qarindoshi yoki buvi buvasi) olib keladi. Ta’lim markazlarida dastlabki 2 ta dars bepul bo’lganligi sababli shartnomalar ko’p holda voyaga yetmagan o’quvchilar tomonidan berib yuboriladi va shartnomaning huquqiy statusi boshqarilmaydi.",
@@ -116,7 +116,79 @@ const resources = {
       "footer-link-7": "Elektron imzo toʼgʼrisidagi” “Oʼzbekiston Respublikasi Qonuni.",
       "footer-link-8": "Tadbirkorlik subʼektlariga xalqaro platformalar orqali raqamli texnologiyalar uchun qulay shart-sharoitlar yaratish chora tadbirlari toʼgʼrisidagi ”gi qarori.",
       "footer-link-9": "“Jismoniy va yuridik shaxslarning murojaatlari to'g'risiga”gi Qonun",
-    
+      
+      "sidebar-link-1": "Shartnomalar",
+      "sidebar-link-2": "Arizalar",
+      "sidebar-link-3": "Murojaatlar",
+      "sidebar-link-4": "Boshqa hujjatlar",
+      "sidebar-link-5": "Imzoga",
+      "sidebar-link-6": "SMS-xabarnoma",
+      "sidebar-link-7": "Korporativ pochta",
+
+      "balance-title": "Balans:",
+      "balance-currency": "so’m",
+      "balance-btn": "Hisobni to'ldirish",
+
+      "create-btn-text": "YARATISH",
+      "theme-btn-text": "Rangni o’zgartirish",
+
+      "shartnomalar-table-title-1": "Shartnomalar",
+      "shartnomalar-table-title-2": "Shartnoma",
+      "shartnomalar-table-title-3": "Imzolangan sanasi",
+      "shartnomalar-table-title-4": "Holati",
+      "shartnomalar-table-title-5": "sanasi",
+      "shartnomalar-table-title-6": "raqami",
+      "shartnomalar-table-title-7": "muddati",
+      "shartnomalar-table-title-8": "korxona",
+      "shartnomalar-table-title-9": "mijoz",
+
+      "searchbar-text": "Qidirish",
+
+      "arizalar-table-title-1": "Arizalar",
+      "arizalar-table-title-2": "Yuborilgan tashkilot nomi korxona mijoz",
+      "arizalar-table-title-3": "Holati",
+      "arizalar-table-title-4": "sanasi",
+      "arizalar-table-title-5": "muddati",
+      "arizalar-table-title-6": "muddati",
+
+      "upload-btn-text": "Fayl yuklang",
+      
+      "signature-count-wrapper-title": "Imzolovchilar soni",
+      "signature-count-title-1": "1 nafar",
+      "signature-count-title-2": "2 nafar",
+      "signature-count-title-3": "3 nafar",
+      "signature-count-title-4": "4 va undan ko‘p",
+      
+      "signature-info-title": "Imzolovchilar haqida ma’lumotni kiriting",
+      "info-input-text-1": "Lavozim",
+      "info-input-text-2": "Ism familiya",
+      "info-input-text-3": "Telefon raqami",
+
+      "signature-info-btn-1": "Ko‘rish",
+      "signature-info-btn-2": "Yuborish",
+
+      "number-wrapper-title": "Qabul qilib oluvchilar raqamini kiriting.",
+      "send-btn-text": "Yuborish",
+
+      "number-wrapper-title": "Qabul qilib oluvchilar raqamini kiriting.",
+      
+      "message-textarea-placeholder": "Xabar matnini kiriting 250ta harfgacha",
+      "ocr-upload-btn-text": "Faylni yuklash",
+      "ocr-convert-btn-text": "Kanvertatsiya qilish",
+      "ocr-extract-btn-text": "Nusxa ko‘chirish",
+      "ocr-download-btn-text": "Word shaklida yuklab olish",
+
+      "locker-title": "Hujjatlarni online bloklash",
+      "locker-upload-btn-text": "Fayllarni bu yerga yuklang",
+      "locker-form-title": "Zaklad tog'risidagi kelishuv",
+      "locker-form-label": "Iltimos faylni bloklash uchun parolni kiriting",
+
+      "locker-btn-text": "Bloklash",
+
+      "locker-phone-title": "Telefon raqam",
+      
+      "locker-password-input-text": "Parolni kiriting",
+      "locker-password-input-text-2": "Parolni qayta kiriting",
     }
   },
   uz_kr: {
@@ -234,6 +306,87 @@ const resources = {
       "footer-link-7": "Електрон имзо тоʼгʼрисидаги” “Оʼзбекистон Республикаси Қонуни.",
       "footer-link-8": "Тадбиркорлик субʼектларига халқаро платформалар орқали рақамли технологиялар учун қулай шарт-шароитлар яратиш чора тадбирлари тоʼгʼрисидаги ”ги қарори.",
       "footer-link-9": "“Жисмоний ва юридик шахсларнинг мурожаатлари тўғрисига”ги Қонун",
+      
+      "sidebar-link-1": "Шартномалар",
+      "sidebar-link-2": "Aризалар",
+      "sidebar-link-3": "Мурожаатлар",
+      "sidebar-link-4": "Бошқа ҳужжатлар",
+      "sidebar-link-5": "Имзога",
+      "sidebar-link-6": "СМС-хабарнома",
+      "sidebar-link-7": "Корпоратив почта",
+
+      "balance-title": "Баланс:",
+      "balance-currency": "сўм",
+      "balance-btn": "Ҳисобни тўлдириш",
+
+      "create-btn-text": "ЯРАТИШ",
+      "theme-btn-text": "Рангни ўзгартириш",
+
+      "shartnomalar-table-title-1": "Шартномалар",
+      "shartnomalar-table-title-2": "Шартнома",
+      "shartnomalar-table-title-3": "Имзоланган санаси",
+      "shartnomalar-table-title-4": "Ҳолати",
+
+      "shartnomalar-table-title-5": "санаси",
+      "shartnomalar-table-title-6": "рақами",
+      "shartnomalar-table-title-7": "муддати",
+      "shartnomalar-table-title-8": "корхона",
+      "shartnomalar-table-title-9": "мижоз",
+
+      "searchbar-text": "Қидириш",
+
+      "arizalar-table-title-1": "Arizalar",
+      "arizalar-table-title-2": "Yuborilgan tashkilot nomi korxona mijoz",
+      "arizalar-table-title-3": "Holati",
+      "arizalar-table-title-4": "sanasi",
+      "arizalar-table-title-5": "muddati",
+      "arizalar-table-title-6": "muddati",
+
+      "arizalar-table-title-1": "Аризалар",
+      "arizalar-table-title-2": "Юборилган ташкилот номи корхона мижоз",
+      "arizalar-table-title-3": "Ҳолати",
+      "arizalar-table-title-4": "санаси",
+      "arizalar-table-title-5": "муддати",
+      "arizalar-table-title-6": "муддати",
+
+      "upload-btn-text": "Файл юкланг",
+      "signature-count-wrapper-title": "Имзоловчилар сони",
+      "signature-count-title-1": "1 нафар",
+      "signature-count-title-2": "2 нафар",
+      "signature-count-title-3": "3 нафар",
+      "signature-count-title-4": "4 ва ундан кўп",
+
+      "signature-info-title": "Имзоловчилар ҳақида маълумотни киритинг",
+
+      "signature-info-input-text-1": "Лавозим",
+      "signature-info-input-text-2": "Исм фамилия",
+      "signature-info-input-text-3": "Телефон рақами",
+
+      "signature-info-btn-1": "Кўриш",
+      "signature-info-btn-2": "Юбориш",
+    
+      "send-btn-text": "Юбориш",
+
+      "number-wrapper-title": "Қабул қилиб олувчилар рақамини киритинг.",
+      "message-textarea-placeholder": "Хабар матнини киритинг 250та ҳарфгача",
+      
+      "ocr-upload-btn-text": "Файлни юклаш",
+      "ocr-convert-btn-text": "Канвертатсия қилиш",
+      "ocr-extract-btn-text": "Нусха кўчириш",
+      "ocr-download-btn-text": "Word шаклида юклаб олиш",
+
+      "locker-title": "Ҳужжатларни online блоклаш",
+      "locker-upload-btn-text": "Файлларни бу ерга юкланг",
+      "locker-form-title": "Заклад тоғрисидаги келишув",
+      "locker-form-label": "Илтимос файлни блоклаш учун паролни киритинг",
+
+      "locker-btn-text": "Блоклаш",
+
+      "locker-password-input-text": "Паролни киритинг",
+      "locker-password-input-text-2": "Паролни қайта киритинг",
+
+      "locker-phone-title": "Телефон рақам",
+
     }
   }
 };

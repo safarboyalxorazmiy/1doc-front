@@ -1,6 +1,9 @@
 import { FaPlus, FaSearch, FaFileExcel } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 const Arizalar = () => {
+	const { t, i18n } = useTranslation();
+
   return (
     <div>
       <div className="row align-items-center top-bar">
@@ -18,7 +21,7 @@ const Arizalar = () => {
                 </defs>
               </svg>
 
-              <span>YARATISH</span>
+              <span>{t("create-btn-text")}</span>
             </button>
           </div>
 
@@ -75,15 +78,15 @@ const Arizalar = () => {
         <thead>
           <tr>
             <th scope="col" rowSpan="2">No</th>
-            <th scope="col" rowSpan="2">Arizalar</th>
-            <th scope="col" colSpan="3">Arizalar</th>
-            <th scope="col" colSpan="2" rowSpan={2}>Yuborilgan tashkilot nomi korxona mijoz</th>
-            <th scope="col" rowSpan="2">Holati</th>
+            <th scope="col" rowSpan="2">{t("arizalar-table-title-1")}</th>
+            <th scope="col" colSpan="3">{t("arizalar-table-title-1")}</th>
+            <th scope="col" colSpan="2" rowSpan={2}>{t("arizalar-table-title-2")}</th>
+            <th scope="col" rowSpan="2">{t("arizalar-table-title-3")}</th>
           </tr>
           <tr>
-            <th scope="col">sanasi</th>
-            <th scope="col">muddati</th>
-            <th scope="col">muddati</th>
+            <th scope="col">{t("arizalar-table-title-4")}</th>
+            <th scope="col">{t("arizalar-table-title-5")}</th>
+            <th scope="col">{t("arizalar-table-title-6")}</th>
           </tr>
         </thead>
         <tbody>

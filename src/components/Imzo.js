@@ -1,55 +1,58 @@
 import { FaPlus, FaSearch, FaFileExcel } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 const Imzo = () => {
+	const { t, i18n } = useTranslation();
+
   return (
     <div className="imzo-page">
       <div className="row align-items-center top-bar">
           <div className="col-auto upload-btn-wrapper">
             <button className="btn btn-outline-primary">
-              <span>Fayl yuklang</span>
+              <span>{t("upload-btn-text")}</span>
             </button>
           </div>
 
           <div className="col signature-count-wrapper">
-            <span  className="title">Imzolovchilar soni</span>
+            <span  className="title">{t("signature-count-wrapper-title")}</span>
             <div className="signature-count-group" role="group">
               <button type="button" className="signature-count">
-                <span>1 nafar</span>
+                <span>{t("signature-count-title-1")}</span>
               </button>
               
               <button type="button" className="signature-count">
-                <span>2 nafar</span>
+                <span>{t("signature-count-title-2")}</span>
               </button>
 
               <button type="button" className="signature-count">
-                <span>3 nafar</span>
+                <span>{t("signature-count-title-3")}</span>
               </button>
               
               <button type="button" className="signature-count">
-                <span>4 va undan ko'p</span>
+                <span>{t("signature-count-title-4")}</span>
               </button>
             </div>
           </div>
           
           <div className="col-auto signature-info-wrapper">
             <div className="input-group signature-info">
-              <span className="title">Imzolovchilar haqida ma'lumotni kiriting</span>
+              <span className="title">{t("signature-info-title")}</span>
               <div className="info">
                 <span>1</span>
-                <input type="text" placeholder="Lavozim" />
-                <input type="text" placeholder="Ism familiya" />
-                <input type="text" placeholder="Telefon raqami" />
+                <input type="text" placeholder={t("signature-info-input-text-1")} />
+                <input type="text" placeholder={t("signature-info-input-text-2")} />
+                <input type="text" placeholder={t("signature-info-input-text-3")} />
               </div>
               <div className="info">
                 <span>2</span>
-                <input type="text" placeholder="Lavozim" />
-                <input type="text" placeholder="Ism familiya" />
-                <input type="text" placeholder="Telefon raqami" />
+                <input type="text" placeholder={t("signature-info-input-text-1")} />
+                <input type="text" placeholder={t("signature-info-input-text-2")} />
+                <input type="text" placeholder={t("signature-info-input-text-3")} />
               </div>
 
               <div className='btns'>
-                <button>Ko'rish</button>
-                <button>Yuborish</button>
+                <button>{t("signature-info-btn-1")}</button>
+                <button>{t("signature-info-btn-2")}</button>
               </div>
             </div>
           </div>

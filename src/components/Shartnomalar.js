@@ -1,6 +1,10 @@
-import { FaPlus, FaSearch, FaFileExcel } from 'react-icons/fa';
+import React, { useState } from 'react';
+import { FaSearch, FaFileExcel } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
-const Shartnomalar = () => {
+const Shartnomalar = () => {const [activeLink, setActiveLink] = useState('shartnomalar');
+	const { t, i18n } = useTranslation();
+  
   return (
     <div>
       <div className="row align-items-center top-bar">
@@ -18,7 +22,7 @@ const Shartnomalar = () => {
                   </defs>
                 </svg>
 
-                <span>YARATISH</span>
+                <span>{t("create-btn-text")}</span>
               </button>
             </div>
 
@@ -63,7 +67,7 @@ const Shartnomalar = () => {
             
             <div className="col-auto search-wrapper">
               <div className="input-group">
-                <input type="text" className="form-control" placeholder="Qidirish" />
+                <input type="text" className="form-control" placeholder={t("searchbar-text")} />
                 <button className="btn btn-outline-secondary" type="button">
                   <FaSearch />
                 </button>
@@ -75,17 +79,17 @@ const Shartnomalar = () => {
         <thead>
           <tr>
             <th scope="col" rowSpan="2">No</th>
-            <th scope="col" rowSpan="2">Shartnomalar</th>
-            <th scope="col" colSpan="3">Shartnoma</th>
-            <th scope="col" colSpan="2">Imzolangan sanasi</th>
-            <th scope="col" rowSpan="2">Holati</th>
+            <th scope="col" rowSpan="2">{t("shartnomalar-table-title-1")}</th>
+            <th scope="col" colSpan="3">{t("shartnomalar-table-title-2")}</th>
+            <th scope="col" colSpan="2">{t("shartnomalar-table-title-3")}</th>
+            <th scope="col" rowSpan="2">{t("shartnomalar-table-title-4")}</th>
           </tr>
           <tr>
-            <th scope="col">sanasi</th>
-            <th scope="col">raqami</th>
-            <th scope="col">muddati</th>
-            <th scope="col">korxona</th>
-            <th scope="col">mijoz</th>
+            <th scope="col">{t("shartnomalar-table-title-5")}</th>
+            <th scope="col">{t("shartnomalar-table-title-6")}</th>
+            <th scope="col">{t("shartnomalar-table-title-7")}</th>
+            <th scope="col">{t("shartnomalar-table-title-8")}</th>
+            <th scope="col">{t("shartnomalar-table-title-9")}</th>
           </tr>
         </thead>
         <tbody>

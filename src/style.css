@@ -1570,6 +1570,7 @@
 .ocr-page .btn-group {
   display: flex;
   column-gap: 20px;
+  height: 50px;
 }
 .ocr-page .btn-group .btn {
   width: 40% !important;
