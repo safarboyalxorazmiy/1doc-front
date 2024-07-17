@@ -69,7 +69,7 @@ const Shartnomalar = () => {
                 </button>
               </div>
             </div>
-          </div>
+      </div>
 
       <table className="table table-bordered mt-4">
         <thead>
