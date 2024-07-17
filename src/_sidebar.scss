@@ -36,6 +36,19 @@
       margin-left: 60px;
     }
 
+    .theme:hover .btn-outline-primary {
+      background-color: var(--primary-color) !important;
+      color: #FFF !important;
+    }
+
+    .theme:hover .theme-icon {
+      fill: #FFF;
+    }
+
+    .theme-icon {
+      fill: var(--primary-color);
+    }
+
     .dropdown {
       margin-left: 20px;
     }
@@ -1193,9 +1206,14 @@
       flex-direction: column;
       row-gap: 10px;
   
+      &:hover .plus-icon {
+        fill: #FFF;
+      }
+
       .plus-icon {
         width: 40px;
         height: 40px;
+        fill: var(--primary-color);
       }
     }
   }
@@ -1235,6 +1253,16 @@
     margin: 0;
     padding: 0;
     width: 55%;
+
+    .folder-icon {
+      fill: var(--primary-color);
+      width: 53px!important;
+      height: 43px!important;
+    }
+
+    span {
+      height: 21px;
+    }
     
     .folder-group {
       display: flex;
@@ -1396,4 +1424,11 @@
   padding: 17px 30px;
   right: 0px;
   bottom: -80px;
+}
+
+
+
+
+.settings-icon {
+  fill: var(--primary-color);
 }

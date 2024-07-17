@@ -38,6 +38,16 @@
   font-family: "Gilroy-Bold ☞", sans-serif !important;
   margin-left: 60px;
 }
+.sidebar-nav .right .theme:hover .btn-outline-primary {
+  background-color: var(--primary-color) !important;
+  color: #FFF !important;
+}
+.sidebar-nav .right .theme:hover .theme-icon {
+  fill: #FFF;
+}
+.sidebar-nav .right .theme-icon {
+  fill: var(--primary-color);
+}
 .sidebar-nav .right .dropdown {
   margin-left: 20px;
 }
@@ -1100,9 +1110,13 @@
   flex-direction: column;
   row-gap: 10px;
 }
+.top-bar .create-btn-wrapper button.btn-outline-primary:hover .plus-icon {
+  fill: #FFF;
+}
 .top-bar .create-btn-wrapper button.btn-outline-primary .plus-icon {
   width: 40px;
   height: 40px;
+  fill: var(--primary-color);
 }
 .top-bar .search-wrapper {
   width: 20%;
@@ -1132,6 +1146,14 @@
   margin: 0;
   padding: 0;
   width: 55%;
+}
+.top-bar .folders .folder-icon {
+  fill: var(--primary-color);
+  width: 53px !important;
+  height: 43px !important;
+}
+.top-bar .folders span {
+  height: 21px;
 }
 .top-bar .folders .folder-group {
   display: flex;
@@ -1279,6 +1301,10 @@
   padding: 17px 30px;
   right: 0px;
   bottom: -80px;
+}
+
+.settings-icon {
+  fill: var(--primary-color);
 }
 
 :root {
@@ -2386,7 +2412,7 @@ main .main-content p.reminder a {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  color: #0077b6;
+  color: var(--primary-color);
   background: white;
   column-gap: 10px;
 }

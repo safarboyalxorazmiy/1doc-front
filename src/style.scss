@@ -1464,7 +1464,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  color: #0077b6;
+  color: var(--primary-color);
   background: white;
   column-gap: 10px;
 }
