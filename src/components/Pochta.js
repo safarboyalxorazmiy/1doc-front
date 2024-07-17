@@ -5,11 +5,6 @@ const Pochta = () => {
     <div>
       
 
-      <button className="excel-button">
-          <FaFileExcel />
-          Excel faylni yuklab olish
-      </button>
-
     </div>
     
   );
