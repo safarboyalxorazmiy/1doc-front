@@ -10,6 +10,7 @@ import OCR from './OCR';
 import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'; 
+import Locker from './Locker';
 
 const Sidebar = () => {
   const [activeLink, setActiveLink] = useState('shartnomalar');
@@ -60,6 +61,27 @@ const Sidebar = () => {
     setThemeLinkHovered(false);
   }
 
+  const changeToRed = () => {
+    document.documentElement.style.setProperty('--primary-color', '#FF5850');
+    document.documentElement.style.setProperty('--primary-color-hover', '#FF5850');
+    setTheme('red');
+    setThemeLinkHovered(false);
+  }
+
+  const changeToPurple = () => {
+    document.documentElement.style.setProperty('--primary-color', '#A020F0');
+    document.documentElement.style.setProperty('--primary-color-hover', '#A020F0');
+    setTheme('purple');
+    setThemeLinkHovered(false);
+  }
+
+  const changeToGold = () => {
+    document.documentElement.style.setProperty('--primary-color', '#FDD017');
+    document.documentElement.style.setProperty('--primary-color-hover', '#FDD017');
+    setTheme('gold');
+    setThemeLinkHovered(false);
+  }
+
   return (
     <div>
       <nav className="sidebar-nav">
@@ -78,28 +100,40 @@ const Sidebar = () => {
               {
                 themeLinkHovered && (
                   <div className="theme-dropdown">
-                    <button className={`primary ${theme === "primary" ? "active" : ""}`} onClick={changeToPrimary}>
+                    <button 
+                      className={`primary ${theme === "primary" ? "active" : ""}`} 
+                      onClick={changeToPrimary}>
                       <img src="./assets/sidebar/theme-icon-primary.svg" alt="" />
                     </button>
 
-                    <button className={`dark ${theme === "dark" ? "active" : ""}`} onClick={changeToDark}>
+                    <button 
+                      className={`dark ${theme === "dark" ? "active" : ""}`} 
+                      onClick={changeToDark}>
                       <img src="./assets/sidebar/theme-icon-dark.svg" alt="" />
                     </button>
 
-                    <button className={`warning ${theme === "warning" ? "active" : ""}`}>
-                      <img src="./assets/sidebar/theme-icon-warning.svg" onClick={changeToWarning} alt="" />
+                    <button 
+                      className={`warning ${theme === "warning" ? "active" : ""}`}
+                      onClick={changeToWarning}>
+                      <img src="./assets/sidebar/theme-icon-warning.svg"  alt="" />
                     </button>
 
-                    <button className="dark">
-                      <img src="./assets/sidebar/theme-icon.svg" alt="" />
+                    <button 
+                      className={`red ${theme === "red" ? "active" : ""}`}
+                      onClick={changeToRed}>
+                      <img src="./assets/sidebar/theme-icon-red.svg" alt="" />
                     </button>
 
-                    <button className="dark">
-                      <img src="./assets/sidebar/theme-icon.svg" alt="" />
+                    <button 
+                      className={`purple ${theme === "purple" ? "active" : ""}`}
+                      onClick={changeToPurple}>
+                      <img src="./assets/sidebar/theme-icon-purple.svg" alt="" />
                     </button>
 
-                    <button className="dark">
-                      <img src="./assets/sidebar/theme-icon.svg" alt="" />
+                    <button 
+                      className={`gold ${theme === "gold" ? "active" : ""}`}
+                      onClick={changeToGold}>
+                      <img src="./assets/sidebar/theme-icon-gold.svg" alt="" />
                     </button>
                   </div>
                 )
@@ -243,6 +277,16 @@ const Sidebar = () => {
                 <img src={`${activeLink === 'ocr' || hoveredLink === 'ocr' ? 'assets/sidebar/ocr-light.svg' : 'assets/sidebar/ocr.svg'}`} width={30} height={30}  alt="" />
                 OCR-Redactor
               </a>
+
+              <a 
+                className={`sidebar-link locker ${activeLink === 'locker' ? 'is-active' : ''}`} 
+                onClick={() => handleLinkClick('locker')}
+                onMouseEnter={() => handleLinkHover('locker')}
+                onMouseLeave={() => handleLinkHover("")}
+              >
+                <img src={`${activeLink === 'locker' || hoveredLink === 'locker' ? 'assets/sidebar/locker-light.svg' : 'assets/sidebar/locker.svg'}`} width={30} height={30}  alt="" />
+                Locker
+              </a>
             </div>
           </div>
         </div>
@@ -257,6 +301,7 @@ const Sidebar = () => {
             activeLink === 'sms' ? <Sms /> :
             activeLink === 'pochta' ? <Pochta /> :
             activeLink === 'ocr' ? <OCR /> :
+            activeLink === 'locker' ? <Locker /> :
             null
           }
         </div>
