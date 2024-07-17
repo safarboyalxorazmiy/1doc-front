@@ -67,7 +67,7 @@ body {
     font-family: 'Gilroy-Regular ☞', sans-serif !important;
 
     &::selection {
-      background-color: $primary-color;
+      background-color: var(--primary-color);
       color: #fff; 
     }
   }
@@ -78,11 +78,11 @@ body {
   }
 
   &::-webkit-scrollbar-thumb {  
-    background-color: $primary-color; 
+    background-color: var(--primary-color); 
   }
 
   &::-webkit-scrollbar-thumb:active {
-    background-color: $primary-color-hover;
+    background-color: var(--primary-color-hover);
   }
 
   &::-webkit-scrollbar-track {
@@ -93,24 +93,24 @@ body {
 }
 
 .btn-primary {
-  background-color: $primary-color;
+  background-color: var(--primary-color);
   color: #FFF;
   font-weight: bold;
-  border-color: $primary-color;
+  border-color: var(--primary-color);
 }
 
 .btn-primary:hover {
-  background-color: $primary-color-hover!important;
+  background-color: var(--primary-color-hover)!important;
 }
 
 .btn-outline-primary {
   font-weight: bold;
-  border-color: $primary-color!important;
-  color: $primary-color!important;
+  border-color: var(--primary-color)!important;
+  color: var(--primary-color)!important;
 }
 
 .btn-outline-primary:hover {
-  background-color: $primary-color!important;
+  background-color: var(--primary-color)!important;
   color: #FFF!important;
 }
 
@@ -131,7 +131,7 @@ body {
 }
 
 .carousel-dark .carousel-indicators [data-bs-target] {
-  background-color: $primary-color;
+  background-color: var(--primary-color);
 }
 
 .carousel-dark .carousel-indicators [aria-current=false] {
@@ -174,7 +174,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $primary-color;
+    background-color: var(--primary-color);
 
     p {
       margin: 0;
@@ -198,7 +198,7 @@ header {
 
     a.logo {
       text-decoration: none;
-      color: $primary-color;
+      color: var(--primary-color);
       display: flex;
       align-items: center;
       gap: 28px;
@@ -230,7 +230,7 @@ header {
       }
 
       .btn-outline-primary {
-        border: 2px solid $primary-color;
+        border: 2px solid var(--primary-color);
         width: 132px;
         height: 65px;
         display: flex;
@@ -486,7 +486,7 @@ section.statistics {
 
   .statistics-banner {
     height: 200px;
-    background-color: $primary-color;
+    background-color: var(--primary-color);
 
     p {
       font-size: 24px;
@@ -517,7 +517,7 @@ section.statistics {
 
       h4 {
         margin-top: 10px;
-        color: $primary-color;
+        color: var(--primary-color);
         font-weight: bold;
         font-size: 18px;
         width: 100%;
@@ -628,7 +628,7 @@ section.first-slider {
 
 section.info-content {
   height: 350px;
-  background-color: $primary-color;
+  background-color: var(--primary-color);
   padding: 0px 100px;
   color: #FFF;
   margin-top: 100px;
@@ -1017,7 +1017,7 @@ section.pricing {
 
       h3 {
         font-size: 32px;
-        color: $primary-color;
+        color: var(--primary-color);
         font-family: "Gilroy-Bold ☞", sans-serif !important;
 
         span {
@@ -1091,7 +1091,7 @@ section.banner {
 
     h2 {
       font-weight: bold;
-      color: $primary-color;
+      color: var(--primary-color);
       font-size: 42px;
       margin-top: 0;
       margin-bottom: 12px;
@@ -1427,7 +1427,7 @@ main {
       margin-top: 30px;
 
       a {
-        color: $primary-color;
+        color: var(--primary-color);
         text-decoration: none;
         display: block;
         text-align: center;

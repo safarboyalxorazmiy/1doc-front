@@ -30,7 +30,7 @@
 
     .tel {
       text-decoration: none;
-      color: $primary-color;
+      color: var(--primary-color);
       font-weight: bold;
       font-family: "Gilroy-Bold ☞", sans-serif!important;
       margin-left: 60px;
@@ -52,7 +52,7 @@
     }
   
     h1 {
-      color: $primary-color;
+      color: var(--primary-color);
       font-size: 24px;
       margin: 0;
       font-family: "Gilroy-Bold ☞", sans-serif!important;
@@ -82,7 +82,7 @@
     align-items: center;
     justify-content: space-between;
     padding-bottom: 15px;
-    border-bottom: 1px solid $primary-color;
+    border-bottom: 1px solid var(--primary-color);
 
     .account-name {
       width: auto;  
@@ -91,7 +91,7 @@
     .account-img {
       width: 44px;
       height: 44px;
-      background-color: $primary-color;
+      background-color: var(--primary-color);
       border-radius: 50%;
     }
   }
@@ -193,11 +193,11 @@
      &.is-active {
       font-weight: 600;
       color: #FFF!important;  
-      background-color: $primary-color;
+      background-color: var(--primary-color);
 
       &:nth-child(2n + 1) {
        svg {
-        background: $primary-color;
+        background: var(--primary-color);
        }
       }
       &:nth-child(2n) {
@@ -609,7 +609,7 @@
       right: 5px;
     }
     &.offline:before {
-      background-color: $primary-color;
+      background-color: var(--primary-color);
     }
     }
     &-time {
@@ -772,7 +772,7 @@
       display: inline-block;
     }
     &.offline:after {
-      background-color: $primary-color;
+      background-color: var(--primary-color);
     }
     }
   }

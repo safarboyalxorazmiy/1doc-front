@@ -18,6 +18,7 @@ const Sidebar = () => {
 	const { t, i18n } = useTranslation();
 	const [isOpen, setIsOpen] = useState(false);
 	const [language, setLanguage] = useState("O'zbekcha");
+	const [theme, setTheme] = useState("primary");
 
   useEffect(() => {
     // Alert the page location when the component mounts
@@ -38,6 +39,27 @@ const Sidebar = () => {
     setIsOpen(!isOpen);
   };
 
+  const changeToPrimary = () => {
+    document.documentElement.style.setProperty('--primary-color', '#0077B6');
+    document.documentElement.style.setProperty('--primary-color-hover', '#003f61');
+    setTheme('primary');
+    setThemeLinkHovered(false);
+  } 
+
+  const changeToDark = () => {
+    document.documentElement.style.setProperty('--primary-color', '#212529');
+    document.documentElement.style.setProperty('--primary-color-hover', '#212529');
+    setTheme('dark');
+    setThemeLinkHovered(false);
+  }  
+
+  const changeToWarning = () => {
+    document.documentElement.style.setProperty('--primary-color', '#6C6D1A');
+    document.documentElement.style.setProperty('--primary-color-hover', '#6C6D1A');
+    setTheme('warning');
+    setThemeLinkHovered(false);
+  }
+
   return (
     <div>
       <nav className="sidebar-nav">
@@ -56,16 +78,16 @@ const Sidebar = () => {
               {
                 themeLinkHovered && (
                   <div className="theme-dropdown">
-                    <button className="light active">
-                      <img src="./assets/sidebar/theme-icon.svg" alt="" />
+                    <button className={`primary ${theme === "primary" ? "active" : ""}`} onClick={changeToPrimary}>
+                      <img src="./assets/sidebar/theme-icon-primary.svg" alt="" />
                     </button>
 
-                    <button className="dark">
-                      <img src="./assets/sidebar/theme-icon.svg" alt="" />
+                    <button className={`dark ${theme === "dark" ? "active" : ""}`} onClick={changeToDark}>
+                      <img src="./assets/sidebar/theme-icon-dark.svg" alt="" />
                     </button>
 
-                    <button className="dark">
-                      <img src="./assets/sidebar/theme-icon.svg" alt="" />
+                    <button className={`warning ${theme === "warning" ? "active" : ""}`}>
+                      <img src="./assets/sidebar/theme-icon-warning.svg" onClick={changeToWarning} alt="" />
                     </button>
 
                     <button className="dark">
