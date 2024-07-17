@@ -47,10 +47,43 @@ const Sidebar = () => {
           </a>
 
           <div className="right d-flex">
-            <button className='btn btn-outline-primary' onMouseEnter={() => setThemeLinkHovered(true)} onMouseLeave={() => setThemeLinkHovered(false)}>
-              Rangni o’zgartirish
-              <img src={themeLinkHovered ? "./assets/sidebar/theme-icon-light.svg" : "./assets/sidebar/theme-icon.svg"} alt="" />
-            </button>
+            <div className="theme" onMouseEnter={() => setThemeLinkHovered(true)} onMouseLeave={() => setThemeLinkHovered(false)}>
+              <button className='theme-btn btn btn-outline-primary'>
+                <span>Rangni o’zgartirish</span>
+                <img src={themeLinkHovered ? "./assets/sidebar/theme-icon-light.svg" : "./assets/sidebar/theme-icon.svg"} alt="" />
+              </button>
+
+              {
+                themeLinkHovered && (
+                  <div className="theme-dropdown">
+                    <button className="light active">
+                      <img src="./assets/sidebar/theme-icon.svg" alt="" />
+                    </button>
+
+                    <button className="dark">
+                      <img src="./assets/sidebar/theme-icon.svg" alt="" />
+                    </button>
+
+                    <button className="dark">
+                      <img src="./assets/sidebar/theme-icon.svg" alt="" />
+                    </button>
+
+                    <button className="dark">
+                      <img src="./assets/sidebar/theme-icon.svg" alt="" />
+                    </button>
+
+                    <button className="dark">
+                      <img src="./assets/sidebar/theme-icon.svg" alt="" />
+                    </button>
+
+                    <button className="dark">
+                      <img src="./assets/sidebar/theme-icon.svg" alt="" />
+                    </button>
+                  </div>
+                )
+              }
+            </div>
+            
 
             <a href="tel:+998999367099" className='tel'>+998 99 936 70 99</a>
         
