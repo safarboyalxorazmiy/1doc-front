@@ -25,6 +25,30 @@ const Sidebar = () => {
     // Alert the page location when the component mounts
     if (window.location == "http://localhost:3000/#app/dashboard") {
       setActiveLink('shartnomalar');
+
+      let theme = localStorage.getItem("theme");
+      switch(theme) {
+        case "primary":
+          changeToPrimary();
+          break;
+        case "dark":
+          changeToDark();
+          break;
+        case "warning":
+          changeToWarning();
+          break;
+        case "red":
+          changeToRed();
+          break;
+        case "gold":
+          changeToGold();
+          break;
+        case "purple":
+          changeToPurple();
+          break;
+        default:
+          changeToPrimary();
+      }
     }
   }, []);
 
@@ -45,6 +69,7 @@ const Sidebar = () => {
     document.documentElement.style.setProperty('--primary-color-hover', '#003f61');
     setTheme('primary');
     setThemeLinkHovered(false);
+    localStorage.setItem("theme", "primary");
   } 
 
   const changeToDark = () => {
@@ -52,6 +77,7 @@ const Sidebar = () => {
     document.documentElement.style.setProperty('--primary-color-hover', '#212529');
     setTheme('dark');
     setThemeLinkHovered(false);
+    localStorage.setItem("theme", "dark");
   }  
 
   const changeToWarning = () => {
@@ -59,6 +85,7 @@ const Sidebar = () => {
     document.documentElement.style.setProperty('--primary-color-hover', '#6C6D1A');
     setTheme('warning');
     setThemeLinkHovered(false);
+    localStorage.setItem("theme", "warning");
   }
 
   const changeToRed = () => {
@@ -66,6 +93,7 @@ const Sidebar = () => {
     document.documentElement.style.setProperty('--primary-color-hover', '#FF5850');
     setTheme('red');
     setThemeLinkHovered(false);
+    localStorage.setItem("theme", "red");
   }
 
   const changeToPurple = () => {
@@ -73,6 +101,7 @@ const Sidebar = () => {
     document.documentElement.style.setProperty('--primary-color-hover', '#A020F0');
     setTheme('purple');
     setThemeLinkHovered(false);
+    localStorage.setItem("theme", "purple");
   }
 
   const changeToGold = () => {
@@ -80,6 +109,7 @@ const Sidebar = () => {
     document.documentElement.style.setProperty('--primary-color-hover', '#FDD017');
     setTheme('gold');
     setThemeLinkHovered(false);
+    localStorage.setItem("theme", "gold");
   }
 
   return (
