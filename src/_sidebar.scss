@@ -1660,8 +1660,42 @@
   bottom: -80px;
 }
 
-.settings-icon {
-  fill: var(--primary-color);
+.settings {
+  position: relative;
+  cursor: pointer;
+  padding: 20px;
+
+  .settings-icon {
+    fill: var(--primary-color);
+  }
+  
+  .settings-dropdown {
+    position: absolute;
+    bottom: -90px;
+    left: -120px;
+    background-color: #FFF;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 4px;
+    min-width: 200px;
+    z-index: 2;
+    transition: all 1s ease-in-out;
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+
+      li {
+        padding: 12px 16px;
+        color: black;
+
+        &:hover {background-color: #f1f1f1}
+      }
+    }
+  }
 }
 
 .qrcode-icon {
@@ -2115,4 +2149,5 @@
   display: flex!important;
   background-color: #fff;
   z-index: 7;
+  
 }
