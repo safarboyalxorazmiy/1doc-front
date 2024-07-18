@@ -22,6 +22,9 @@ const Sidebar = () => {
 	const [language, setLanguage] = useState("O'zbekcha");
 	const [theme, setTheme] = useState("primary");
 
+	const [isNavbarOpened, setIsNavbarOpened] = useState(false);
+
+
   useEffect(() => {
     // Alert the page location when the component mounts
     if (window.location == "http://localhost:3000/#app/dashboard") {
@@ -113,6 +116,10 @@ const Sidebar = () => {
     localStorage.setItem("theme", "gold");
   }
 
+  const toggleMenu = () => {
+    setIsNavbarOpened(!isNavbarOpened)
+  } 
+
   return (
     <div>
       <nav className="sidebar-nav">
@@ -120,6 +127,10 @@ const Sidebar = () => {
             <img src="/assets/logo.svg" alt="1doc.uz Logo" />
             <h1>1doc.uz</h1>
           </a>
+
+          <div className="menu-expand" onClick={() => {toggleMenu()}}>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"  aria-hidden="true"><path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path></svg>
+          </div>
 
           <div className="right d-flex">
             <div className="theme" onMouseEnter={() => setThemeLinkHovered(true)} onMouseLeave={() => setThemeLinkHovered(false)}>
@@ -200,8 +211,8 @@ const Sidebar = () => {
           </div>
       </nav>
 
-      <div className="container" id='sidebar'>
-        <div className="sidebar">
+      <div className={`container`} id='sidebar'>
+        <div className={`sidebar ${isNavbarOpened ? `opened` : ``}`}>
           {/* <div className="logo">
             
           </div>

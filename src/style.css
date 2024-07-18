@@ -1075,6 +1075,9 @@
   }
 }
 @media screen and (max-width: 735px) {
+  .logo-expand {
+    display: none !important;
+  }
   #sidebar .main-blogs {
     flex-wrap: wrap;
   }
@@ -1089,6 +1092,21 @@
     margin-left: 0;
     margin-top: 20px;
     background-size: cover;
+  }
+  .search-wrapper {
+    display: none !important;
+  }
+  .top-bar .create-btn-wrapper {
+    width: 25% !important;
+  }
+  table {
+    overflow-x: scroll;
+    width: 100%;
+    display: block;
+    height: 100%;
+  }
+  .menu-expand {
+    display: block !important;
   }
 }
 @media screen and (max-width: 475px) {
@@ -1127,6 +1145,12 @@
     height: 100vh;
     border-radius: 0;
     max-height: 100%;
+  }
+  .search-wrapper {
+    display: none !important;
+  }
+  .top-bar .create-btn-wrapper {
+    width: 45% !important;
   }
 }
 .top-bar {
@@ -1833,6 +1857,15 @@
   width: 70%;
 }
 
+.opened {
+  position: fixed;
+  left: 0;
+  height: 100%;
+  display: flex !important;
+  background-color: #fff;
+  z-index: 7;
+}
+
 :root {
   --primary-color: #0077B6;
   --primary-color-hover: #003f61;
@@ -2085,6 +2118,10 @@ header .header-content .btns .btn-primary {
   border-radius: 44px;
 }
 
+.menu-expand {
+  display: none;
+}
+
 @media only screen and (max-width: 1425px) {
   header img.tel {
     right: 100px;
@@ -2107,7 +2144,7 @@ header .header-content .btns .btn-primary {
   }
 }
 @media only screen and (max-width: 1152px) {
-  header .header-content h1 {
+  header .header-content .header-title {
     width: 554px;
   }
   header img.tel {
@@ -2121,7 +2158,7 @@ header .header-content .btns .btn-primary {
   }
 }
 @media only screen and (max-width: 927px) {
-  header nav a.logo h1 {
+  header nav a.logo .header-title {
     font-size: 32px;
   }
   header nav .btns {
@@ -2140,7 +2177,7 @@ header .header-content .btns .btn-primary {
   header .header-content {
     padding-top: 40px;
   }
-  header .header-content h1 {
+  header .header-content .header-title {
     font-size: 32px;
     width: 454px;
     z-index: 2;
@@ -2174,6 +2211,11 @@ header .header-content .btns .btn-primary {
     width: 35%;
   }
 }
+@media only screen and (max-width: 725px) {
+  .header-content {
+    height: 350px !important;
+  }
+}
 @media only screen and (max-width: 700px) {
   header img.tel {
     display: none;
@@ -2191,7 +2233,7 @@ header .header-content .btns .btn-primary {
   header .header-content {
     padding: 24px 20px;
   }
-  header .header-content h1 {
+  header .header-content .header-title {
     margin: 0 auto;
     text-align: center;
   }
@@ -2206,7 +2248,7 @@ header .header-content .btns .btn-primary {
   header nav .btns .btn-primary {
     display: none;
   }
-  header .header-content h1 {
+  header .header-content .header-title {
     font-size: 18px;
     width: 354px;
   }
@@ -2837,6 +2879,7 @@ main {
   height: 840px;
   padding: 40px 100px;
   column-gap: 104px;
+  margin-top: 150px;
 }
 main .main-img {
   width: 45%;
@@ -2913,6 +2956,27 @@ main .main-content p.reminder a {
   text-align: center;
 }
 
+@media only screen and (max-width: 1000px) {
+  main .main-img {
+    display: none !important;
+  }
+  main .main-content {
+    width: 70%;
+    margin-top: 100px;
+  }
+}
+@media only screen and (max-width: 610px) {
+  main {
+    padding: 50px;
+  }
+  main .main-img {
+    display: none !important;
+  }
+  main .main-content {
+    width: 100%;
+    margin-top: 0px;
+  }
+}
 .dropdown {
   width: 15%;
   margin-left: auto;

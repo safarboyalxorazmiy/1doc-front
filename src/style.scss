@@ -283,6 +283,10 @@ header {
   }
 }
 
+.menu-expand {
+  display: none;
+}
+
 @media only screen and (max-width: 1425px) {
   header {
     img.tel {
@@ -319,7 +323,7 @@ header {
 @media only screen and (max-width: 1152px) {
   header {
     .header-content {
-      h1 {
+      .header-title {
         width: 554px;
       }
     }
@@ -339,13 +343,14 @@ header {
       }
     }
   }
+  
 }
 
 @media only screen and (max-width: 927px) {
   header {
     nav {
       a.logo {
-        h1 {
+        .header-title {
           font-size: 32px;
         }
       }
@@ -370,7 +375,7 @@ header {
     .header-content {
       padding-top: 40px;
 
-      h1 {
+      .header-title {
         font-size: 32px;
         width: 454px;
         z-index: 2;
@@ -417,6 +422,12 @@ header {
   }
 }
 
+@media only screen and (max-width: 725px) {
+  .header-content{
+    height: 350px!important;
+  }
+}
+
 @media only screen and (max-width: 700px) {
   
   header {
@@ -441,7 +452,7 @@ header {
     .header-content {
       padding: 24px 20px;
 
-      h1 {
+      .header-title {
         margin: 0 auto;
         text-align: center;
       }
@@ -468,7 +479,7 @@ header {
     }
 
     .header-content {
-      h1 {
+      .header-title {
         font-size: 18px;
         width: 354px;
       }
@@ -1345,6 +1356,7 @@ main {
   height: 840px;
   padding: 40px 100px;
   column-gap: 104px;
+  margin-top: 150px;
 
   .main-img {
     width: 45%;
@@ -1435,6 +1447,32 @@ main {
     }
   }
 }
+
+@media only screen and (max-width: 1000px){
+  main{
+    .main-img{
+      display: none!important;
+    }
+    .main-content{
+      width: 70%;
+      margin-top: 100px;
+    }
+  }
+}
+
+@media only screen and (max-width: 610px){
+  main{
+    padding: 50px;
+    .main-img{
+      display: none!important;
+    }
+    .main-content{
+      width: 100%;
+      margin-top: 0px;
+    }
+  }
+}
+
 
 
 .dropdown {

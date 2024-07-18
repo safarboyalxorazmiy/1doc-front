@@ -1172,58 +1172,81 @@
 }
 
 @media screen and (max-width: 735px) {
- #sidebar {
-  .main-blogs {
-    flex-wrap: wrap;
-   }
-   .main-blog,
-   .main-blog + .main-blog {
+  .logo-expand{
+    display: none!important;
+  }
+
+  #sidebar {
+    .main-blogs {
+      flex-wrap: wrap;
+    }
+    .main-blog,
+    .main-blog + .main-blog {
+      width: 100%;
+    }
+    .videos {
+      grid-template-columns: 1fr;
+    }
+    .main-blog + .main-blog {
+      margin-left: 0;
+      margin-top: 20px;
+      background-size: cover;
+    }
+  }
+
+  .search-wrapper{
+    display: none !important;
+  }
+
+  .top-bar .create-btn-wrapper {
+    width: 25%!important;
+  }
+
+  table {
+    overflow-x: scroll;
     width: 100%;
-   }
-   .videos {
-    grid-template-columns: 1fr;
-   }
-   .main-blog + .main-blog {
-    margin-left: 0;
-    margin-top: 20px;
-    background-size: cover;
-   }
- }
+    display: block;
+    height: 100%;
+  }
+
+  .menu-expand {
+    display: block!important;
+  }
 }
 
 @media screen and (max-width: 475px) {
-#sidebar {
-  .main-blog__title {
-    font-size: 20px;
-   }
-   .author-name {
-    font-size: 14px;
-   }
-   .main-blog__author {
-    flex-direction: column-reverse;
-    align-items: flex-start;
-   }
-   .author-detail {
-    margin-left: 0;
-   }
-   .main-blog .author-img {
-    margin-top: 14px;
-   }
-   .main-container {
-    padding: 0 20px 20px;
-   }
-   .header {
-    padding: 20px;
-   }
-   .sidebar.collapse {
-    width: 40px;
-   }
-   .sidebar {
-    align-items: center;
-   }
-   body {
-    padding: 0;
-   }
+  #sidebar {
+    .main-blog__title {
+      font-size: 20px;
+    }
+    .author-name {
+      font-size: 14px;
+    }
+    .main-blog__author {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+    .author-detail {
+      margin-left: 0;
+    }
+    .main-blog .author-img {
+      margin-top: 14px;
+    }
+    .main-container {
+      padding: 0 20px 20px;
+    }
+    .header {
+      padding: 20px;
+    }
+    .sidebar.collapse {
+      width: 40px;
+    }
+    .sidebar {
+      align-items: center;
+    }
+    body {
+      padding: 0;
+    }
   }
   
  #sidebar {
@@ -1231,6 +1254,16 @@
   border-radius: 0;
   max-height: 100%;
  }
+
+ .search-wrapper{
+    display: none !important;
+  }
+
+  .top-bar .create-btn-wrapper {
+    width: 45%!important;
+  }
+
+  
 }
 
 .top-bar {
@@ -2073,4 +2106,13 @@
       }
     }
   }
+}
+
+.opened {
+  position: fixed;
+  left: 0;
+  height: 100%;
+  display: flex!important;
+  background-color: #fff;
+  z-index: 7;
 }
