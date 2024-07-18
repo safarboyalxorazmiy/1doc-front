@@ -1184,6 +1184,20 @@
   text-align: center;
 }
 
+@media only screen and (max-width: 1400px) {
+  .top-bar {
+    height: auto;
+  }
+  .top-bar .folders {
+    height: auto;
+  }
+  .top-bar .folders .folder-group .folder {
+    height: auto;
+  }
+  .top-bar .folders .folder-group .folder span {
+    height: auto;
+  }
+}
 .wrapper {
   padding: 0px 30px;
 }
