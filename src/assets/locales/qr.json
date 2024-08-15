@@ -1,0 +1,208 @@
+{
+    "Admin": {
+      "pageTitle": "Admin oynasi"
+    },
+    "User": {
+      "PageTitle": "Paydalanıwshı aynası",
+      "Balance": "Balans:",
+      "Pay_button": "Esaptı toltırıw",
+      "Theme_change": "Reńni ózgertiw",
+      "Update_content": "Maǵlıwmatlar jańalaw",
+      "FileUploads": "Fayllardı bulmanǵa júkleng",
+      "FileUpload": "Fayldı bulmanǵa júkleng",
+      "Create_button": "Jaratıw ",
+      "Ambulance_text": "Medicinalıq xızmetlerdi kórsetiw",
+      "Service_text": "Pulli tálim xızmetler",
+      "Delevery_text": "Ónimlerdi jetkiziw",
+      "Work_text": "Shet elge jumısqa jiberiw",
+      "Search_text": " Maǵlıwmat qıdırıw",
+      "Exit": "Shıǵıw",
+      "Contract": {
+        "Title": "Shártnamalar"
+      },
+      "Application": {
+        "Title": "Arzalar"
+      },
+      "Appeal": {
+        "Title": "Shaqırıwlar"
+      },
+      "Document": {
+        "Title": "Basqa hújjetler"
+      },
+      "Signature": {
+        "Title": "Qolga",
+        "Count_wrapper": "Qollovchilar sanı"
+      },
+      "Sms": {
+        "Title": "SMS-xabarnoma",
+        "Number_wrapper": "Qabıl etip alıwshılar nomerin kiritiń.",
+        "Message_textarea": "Fayllardı bulmanǵa júkleng",
+        "Send_button": "Jiberiw"
+      },
+      "Mail": {
+        "Title": "Korparativ pochta"
+      },
+      "AI": {
+        "Title": "AI-YURIST"
+      },
+      "OCR": {
+        "Title": "OCR-Redactor",
+        "Convert_button": "Tekstke awdarma jasaw",
+        "Copy_text": "Nusqa kóshirip alıw",
+        "Save_as_file": "Word formasında júklep alıw"
+      },
+      "Locker": {
+        "Title": "Hújjetti qulflash",
+        "PageTitle": "Hújjetlerdi online bloklash",
+        "Text_two": "Ótinish fayldı bloklaw ushın paroldı kiriting",
+        "Password_number_input": "Paroldı kiriting",
+        "RePassword_number_input": "Paroldı qayta kiriting",
+        "Block_button": "Quflash",
+        "Phone_number_input": "Telefon nomer",
+        "Share_button": "Jiberiw"
+      }
+    },
+    "General": {
+      "Home": {
+        "Navbar": {
+          "Login": "Kiriw",
+          "Demo_button": "Dizimnen ótiw",
+          "Tariffs": "TARIFLER"
+        },
+        "Header": {
+          "text_two": "QURAMALÍ YURIDIKALÍQ HÚJJETLERDI AŃSAT JARATIW HÁM TEZ IMZALAW.",
+          "Header_description": "YURISTLERSIZ! NIZAMLI! ARZON!"
+        },
+        "Tabs": {
+          "Contract": "Shártnamalar",
+          "Contract_text_one": "Qálegen shártnamalardı óz betinshe jaratiń.",
+          "Contract_text_two": "100 den aslam taraw hám baǵdarlar boyınsha jaratılǵan shártnama shablonlarınan paydalanıń.",
+          "Contract_text_three": "Talap etilgen maǵlıwmatlardı kirgiziń.",
+          "Contract_text_four": "Imzalawshilardı belgileń, shártnama halatın jiberiń hám qolaylı usılda qol qoyıń.",
+          "Application": "Árizler",
+          "Application_text_one": "Qálegen shólkemlerge rásmiy arzalar jiberiń..",
+          "Application_text_two": "50 den aslam shólkem, ministrlik hám komitetlerdiń talap hám rejeleri tiykarında jaratılǵan shablonlardan paydalanıń.",
+          "Application_text_three": "Talap etilgen maǵlıwmatlardı kirgiziń",
+          "Application_text_four": "Qolaylı elektron qoltańba túrlerinen birin tańlań hám qoltańbań.",
+          "Document": "Korporativ hújjetler",
+          "Document_text_one": "Kárxanańız jumısındaǵı ruxsatnama, isenimnama, bayanlama, buyrıqlar, akt hám basqa barlıq hújjetlerdi elektron qáliplestiriń.",
+          "Document_text_two": "50 den aslam taraw hám baǵdarlar boyınsha jaratılǵan hújjetler shablonlarınan paydalanıń.",
+          "Document_text_three": "Talap etilgen maǵlıwmatlardı kirgiziń",
+          "Document_text_four": "Imzalawshilardı belgileń, hújjet baylanısın jiberiń hám qolaylı usılda qol qoyıń.",
+          "Appeal": "Múrájatlar",
+          "Appeal_text_one": "Konsentlerińiz, xızmetkerlerińiz hám birge islesiwshilerinizden múrájatlardı tez qabıl etiń.",
+          "Appeal_text_two": "Siz ushın individual usınıs etiletuģın shablonlar tiykarında múrájatlardı qabıl etiń hám tez juwap beriń.",
+          "Appeal_text_three": "Juwap beriw bólimi arqalı hesh qanday múrájatlardı itibardan shette qaldırmań.",
+          "Signature": "Elektron imza",
+          "Signature_text_one": "Biznesiniz úzliksiz islewi ushin barlıq hújjetlerge tez qol qoyıń.",
+          "Signature_text_two": "Xızmet saparında bolsańız da, barlıq áhmietli hújjetler siz benen.",
+          "Signature_text_three": "Tayar Word yamasa PDF formatındaǵı hújjetti júkleń hám imza qoyıwshını belgileń",
+          "Sms": "SMS-xabar",
+          "Sms_text_one": "Jumi'si'ńi'z dawamindaǵi' jańalıqlar, xabarlar ha'm a'hmiyetli maǵluwmatlardi' tekst túrinde qi'sqa cifrlar arqali' jiberiń..",
+          "Sms_text_two": "A'hbúrlew xatlari' ha'm basqa da a'hmiyetli yuridikali'q hújjetlerdi PDF formada qi'sqa cifrlar arqali' jiberiń.",
+          "OCR": "OCR REDAKTORÍ",
+          "OCR_text_one": "OOCR (belgilerdi optikalıq anıqlaw) texnologiyası járdeminde súwretlerdegi jazıwlardı tekst jagdayına keltiriń.",
+          "OCR_text_two": "Tekstlerdi qıyınshılıqsız redaktorlań, kóshirip alıń yamasa Ord formatında júklep alıń..",
+          "AI": "AI-YURIST",
+          "AI_text_one": "Operativ xizmetiniz dawamında dus keliwi múmkin bolgan barlıq huqiqiy máseleler boyinsha birlemshi másláhátler alın",
+          "AI_text_two": "AI Yuristiniz barlıq sorawlarga Ózbekstan nizamshılıǵına tiykarlanıp juwap beredi."
+        },
+        "Info": {
+          "Info_content": "Milliy miynet bazarınıń analitikalıq kórsetkishlerine bola, Tashkent qalasında yuristlerdiń ortasha aylıǵı 8,5 mln sumdı quraydı. Eń kem aylıq 4 million sumnan baslap, 33 million sumǵa shekemgi jumıs usınısları anıqlanǵan. 2 yurist miynet jámáátin tolıq támiyinlew ushın (qaǵazlar, nusqa alıw, pochta hám basqalar) jáne 1 250 000 sum qosımsha qárejetler jumsaladı"
+        },
+        "Carousel": {
+          "Carousel_one": "MEHMONXONA vA HOTELLAR, DALA HOvLI vA SANATORIYALAR",
+          "Carousel_one_text": "Qısqa múddetke qonaqlardı jaylastırıw hám kóshpelis mulkni tolıq emes yamasa pútkilley káramat ısenip tapsırıw búgingi kúndegi eń abırjı bizneslerden biri bolıp qalıp atır. “ZAKS” talabı biykar bolǵandan keyin, qáwip dárejesi jáne de artadı. \n Shártnamańızdı bir demde operativ, ańsat hám nızamlı tastıyıqlab buyım-múlkińiz hám jeke reputatsiyangizni saqlap qalıń.",
+          "Carousel_two": "quv orınları kásip óner hám tálim orayları.",
+          "Carousel_two_text": "Derlik barlıq tálim oraylarına oqıwshılardı óz qáwenderleri (ata-anası jaqın aǵayını yamasa kempir apa babası ) alıp keledi. Tálim oraylarında dáslepki 2 sabaq biypul bolǵanlıǵı sebepli shártnamalar kóp halda jas óspirim oqıwshılar tárepinen berip jiberiledi hám shártnamanıń huqıqıy statusi basqarilmaydi. \\n 1 doc. uz menen siz shártnamanı onlayn qálegen orından qálegen adresatga (qáwenderge) anıq hám ańsat jetkezesiz.",
+          "Carousel_three": "Remontlaw qayta tiklew hám qurılıs jumısları menen shuǵillaniwshı ustalan brigadasi yamasa úlken qurılıs kompaniyaları.",
+          "Carousel_three_text": "Ekonomika tarmaqları arasında eń kóp huqıqıy dawlar kóteriletuǵın tarawlardan biri bul qurılıs bolıp tabıladı. Qurılıs bárháma keshikadi, jobalar unutiladi, sapa jaǵdayı saqlanmaydi, yamasa kerisinshe klient tárepinen ónimler támiynatı waqıtında jetip kelmeydi. Hátte etilgen jumıslar ushın pul da ala almay qalıwıńız múmkin. \n 1 doc. uz - sizge qurılıs tarawı ushın kerekli barlıq hújjetler kompleksi yamasa, obiektińiz ushın arnawlı shártnama beriwge tayın.",
+          "Carousel_four": "Bolıp tólew hám mukromoliya shólkemleri, lambard hám kredit byuroları.",
+          "Carousel_four_text": "Siz qımbat bahalı buyımıńızdı klientke bolıp tólewge ısenip tapsırıp atırsız. Klienttiń tolov minnetlemein ańlatıw, qawip-xaterdi jılawlaw ushın maksimal qorǵawlanǵan shártnamalar usınıs etiń. \n Nızamlı túrde adresat menen shártnamalar qol qoyń. Jetkiziw xatları hám jol xatların jaǵımlı bonus retinde qabıl etip alın."
+        },
+        "Statistics": {
+          "Statistics_title": "QOLAYLI HÚJJETLERDI QOLAYLI JARATIŃ HÁM QOLAYLI TASTIYIQLAŃ",
+          "Statistics_title_one": "JÁMI PAYDALANIWSHILAR",
+          "Statistics_title_two": "PLATFORMADAǴI HÚJJETLER SHABLONLARI",
+          "Statistics_title_three": "Platformada jaratılgan hújjet sanı"
+        },
+        "Signing": {
+          "Signing_title": "QOL QOYIW USILLARI",
+          "Signing_title_one": "FAKSIMILE",
+          "Signing_title_two": "SMS",
+          "Signing_title_three": "TELEGRAM",
+          "Signing_title_four": "FACE ID",
+          "Signing_title_five": "E-IMZO"
+        },
+        "Corparations": {
+          "Corparations_title": "BIZLER MENEN BIRGE"
+        },
+        "Price": {
+          "Price_title": "ÓZ TARIFIŃIZDI TAŃLAŃ",
+          "Price_month": "Oy",
+          "Price_select": "Tańlaw",
+          "Price_one": {
+            "Price_one_title": "Start",
+            "Price_one_content_one": "50 hújjetler",
+            "Price_one_content_two": "50 sms-xabar"
+          },
+          "Price_two": {
+            "Price_two_title": "BIZNES ",
+            "Price_two_content_one": "250 hújjetler",
+            "Price_two_content_two": "250 sms-xabar"
+          },
+          "Price_three": {
+            "Price_three_title": "SENAT",
+            "Price_three_content_one": "500 dana hújjetler",
+            "Price_three_content_two": "500 dana sms-xabar"
+          },
+          "Price_four": {
+            "Price_four_title": "President",
+            "Price_four_content_one": "1000 dana hújjetler",
+            "Price_four_content_two": "1000 dana sms-xabarnoma"
+          }
+        },
+        "Banner": {
+          "Banner_title": "BIR SHESHIM, SHEKSIZ IMKANIYATLAR!"
+        },
+        "Footer": {
+          "Column_one": {
+            "Column_one_title": "Biz haqqında",
+            "Column_one_text_one": "Maǵlıwmatlardıń maxviylik siyasatı",
+            "Column_one_text_two": "Jalpı oferta",
+            "Column_one_text_three": "Basshılıq"
+          },
+          "Column_two": {
+            "Column_two_title": "Nızamlılıq tiykarlari",
+            "Column_two_text_one": "“Elektron kommerciya ” tuwrısındaǵı “Ózbekstan Respublikası Nızamı.",
+            "Column_two_text_two": "Elektron qol tuwrısındaǵı” “Ózbekstan Respublikası Nızamı.",
+            "Column_two_text_three": "Isbilermenlik sub'ektlerine xalıq aralıq platformalar arqalı cifrlı texnologiyalar ushın qolay shárt-shárayatlar jaratıw ilajları tuwrısındaǵı ”gi sheshimi.",
+            "Column_two_text_four": "“Fizikalıq hám yuridikalıq adamlardıń shaqırıwları tuwrısiga”gi Nızam"
+          },
+          "Column_three": {
+            "Column_three_title": "Baylanıs"
+          }
+        }
+      },
+      "Error": {
+        "authError": "Login naduris jazilgan"
+      },
+      "Auth": {
+        "pageTitle": "Sistemaǵa kiriw",
+        "notRegister": "Esap joqpa? ",
+        "register": "Dizimnen ótiw",
+        "phone": "Telefon nomer",
+        "phonePlaceholder": "Telefon nomerin kiritiń +998 ________",
+        "password": "Parol",
+        "passwordPlaceholder": "Jasırın sózdi kiritiń...",
+        "remember": "Meni eslep qal",
+        "forget": "Paroldı unutdingizmi?",
+        "button": "Kiriw"
+      },
+      "NotFound": {
+        "pageTitle": "Bet tabılmadı",
+        "title": "Tilekke qarsı, Siz izlegen bet tabılmadı",
+        "button": "Bas betke qaytiw"
+      }
+    }
+  }

@@ -1,0 +1,249 @@
+{
+    "Admin": {
+      "pageTitle": "Admin oynasi"
+    },
+    "User": {
+      "PageTitle": "Foydalanuvchi oynasi",
+      "Balance": "Balans:",
+      "Pay_button": "Hisobni to'ldirish",
+      "Theme_change": "Ranglarni o’zgartirish",
+      "Update_content": "Ma'lumotlarni yangilash",
+      "FileUploads": "Faylni bu yerga yuklang",
+      "FileUpload": "Faylni bu yerga yuklang",
+      "Create_button": "Yaratish",
+      "Ambulance_text": "Tibbiy xizmatlarni ko’rsatish",
+      "Service_text": "Pulli ta’lim xizmatlar",
+      "Delevery_text": "Mahsulotlarni yetkazib berish",
+      "Work_text": "Xorijga ishga yuborish",
+      "Search_text": "Ma'lumot qidirish",
+      "Exit": "Chiqish",
+      "Account": {
+        "PageTitle": "Ma'lumotlar yangilash",
+        "SubTitle": "Faqat bir marta yangilash mumkin, shuning uchun e'tiborli bo'ling",
+        "UpdateButton": "Yangilash",
+        "Subject": {
+          "Title": "Shaxsiy ma'lumot",
+          "Name": "Korxona nomi",
+          "Surname": "Stir raqami",
+          "Date": "Korxona manzil",
+          "Passport": "Korxona rahbari passport seriyasi",
+          "Phone": "Korxona telefon raqami"
+        },
+        "Object": {
+          "Title": "Korxona ma'lumoti",
+          "CompanyName": "Korxona nomi",
+          "CompanySTIR": "Stir raqami",
+          "CompanyAddress": "Korxona manzil",
+          "CompanyPhone": "Korxona telefon raqami"
+        }
+      },
+      "Contract": {
+        "Title": "Shartnomalar",
+        "Component": {
+          "PageTitle": "Shartnoma yaratish",
+          "SelectContract": "Shartnoma Tanglang"
+        }
+      },
+      "Application": {
+        "Title": "Arizalar",
+        "Component": {
+          "PageTitle": "Shartnoma yaratish",
+          "SelectContract": "Shartnoma Tanglang"
+        }
+      },
+      "Appeal": {
+        "Title": "Murojaatlar"
+      },
+      "Document": {
+        "Title": "Boshqa hujjatlar"
+      },
+      "Signature": {
+        "Title": "Imzoga",
+        "Count_wrapper": "Imzolovchilar soni"
+      },
+      "Sms": {
+        "Title": "SMS-xabarnoma",
+        "Number_wrapper": "Qabul qilib oluvchilar raqamini kiriting.",
+        "Message_textarea": "Fayllarni bu yerga yuklang",
+        "Send_button": "Yuborish"
+      },
+      "Mail": {
+        "Title": "Korparativ pochta"
+      },
+      "AI": {
+        "Title": "AI-Yurist"
+      },
+      "OCR": {
+        "Title": "OCR-Tahrirchi",
+        "Convert_button": "Matnga o'girish",
+        "Copy_text": "Nusxa ko'chirib olish",
+        "Save_as_file": "Word shaklida yuklab olish"
+      },
+      "Locker": {
+        "Title": "Hujjatni qulflash",
+        "PageTitle": "Hujjatlarni online bloklash",
+        "Text_two": "Iltimos faylni bloklash uchun parolni kiriting",
+        "Password_number_input": "Parolni kiriting",
+        "RePassword_number_input": "Parolni qayta kiriting",
+        "Block_button": "Quflash",
+        "Phone_number_input": "Telefon raqam",
+        "Share_button": "Yuborish"
+      }
+    },
+    "General": {
+      "Home": {
+        "Navbar": {
+          "Login": "Kirish",
+          "Demo_button": "Ro'yxatdan o'tish",
+          "Tariffs": "Tariflar"
+        },
+        "Header": {
+          "text_two": "Murakkab yuridik hujjatlarni oson yaratish va tezkor imzolash",
+          "Header_description": "YURISTLARSIZ! QONUNIY! ARZON!"
+        },
+        "Tabs": {
+          "Contract": "Shartnomalar",
+          "Contract_text_one": "Istalgan shartnomalarni mustaqil yarating.",
+          "Contract_text_two": "100 dan ziyod soha va yo'nalishlar bo'yicha yaratilgan shartnoma shablonlaridan foydalaning.",
+          "Contract_text_three": "Talab qilingan ma'lumotlarni kiriting.",
+          "Contract_text_four": "IMZO chekuvchilarni belgilang, shartnoma havolasini yuboring va qulay uslubda imzolang.",
+          "Application": "Arizalar",
+          "Application_text_one": "Istalgan tashkilotlarga rasmiy arizalar yuboring.",
+          "Application_text_two": "50 dan ziyod tashkilot, vazirlik va qo'mitalar talab va nizomlari asosida yaratilgan shablonlardan foydalaning.",
+          "Application_text_three": "Talab qilingan ma'lumotlarni kiriting",
+          "Application_text_four": "Qulay elektron imzolash turlaridan birini tanlang va imzolang.",
+          "Document": "Korporativ hujjatlar",
+          "Document_text_one": "Korxonangiz faoliyatidagi ruxsatnoma, ishonchnoma, bayyonnoma, buyruqlar, dalolatnoma va barcha boshqa hujjatlarni elektron shakllantiring.",
+          "Document_text_two": "50 dan ziyod soha va yo'nalishlar bo'yicha yaratilgan hujjatlar shablonlaridan foydalaning.",
+          "Document_text_three": "Talab qilingan ma'lumotlarni kiriting",
+          "Document_text_four": "Imzo chekuvchilarni belgilang, hujjat havolasini yuboring va qulay uslubda imzolang.",
+          "Appeal": "Murojaatlar",
+          "Appeal_text_one": "Mijozlaringiz, xodim va hamkorlaringizdan murojaatlarni tezkor qabul qilib oling.",
+          "Appeal_text_two": "Siz uchun individual taqdim etiladigan shablonlar asosida murojaatlarni qabul qiling va zudlik bilan javob bering.",
+          "Appeal_text_three": "Javob berish bo'limi orqali hech qaysi murojaatlarni e'tibordan qoldirmang.",
+          "Signature": "Imzo",
+          "Signature_text_one": "Biznesingiz uzluksiz ishlashi uchun barcha hujjatlarni tezkor imzolang.",
+          "Signature_text_two": "Xizmat safarida bo'lsangiz ham, barcha muhim hujjatlar siz bilan.",
+          "Signature_text_three": "Tayyor Word yoki PDF formatidagi hujjatni yuklang va imzo chekuvchini belgilang",
+          "Sms": "SMS Xabarnoma",
+          "Sms_text_one": "Faoliyatingiz davomidagi yangiliklar, xabarlar va muhim ma'lumotlarni matn shaklda qisqa raqamlar orqali yuboring.",
+          "Sms_text_two": "Ogohlantirish xatlari va boshqa muhim yuridik hujjatlarni PDF shaklda qisqa raqamlar orqali yuboring.",
+          "OCR": "OCR Tahrirchi",
+          "OCR_text_one": "OCR (optical character recognition) texnologiyasi yordamida suratlardagi yozuvlarni matn holatiga keltiring.",
+          "OCR_text_two": "Matnlarni qiyinchiliksiz tahrirlang, ko‘chirib oling yoki Word formatida yuklab oling.",
+          "AI": "AI YURIST",
+          "AI_text_one": "Operatsion faoliyatingiz davomida duch kelishingiz mumkin bo‘lgan barcha huquqiy masalalar bo‘yicha birlamchi maslahatlarni oling ",
+          "AI_text_two": "AI Yuristingiz barcha savollarga O‘zbekiston qonunchiligiga asosan javob beradi."
+        },
+        "Info": {
+          "Info_content": "Milliy mehnat bozori tahliliy ko'rsatkichlariga ko'ra,  Toshkent shahrida yuristlarning o'rtacha oyligi 8.5 mln so'mni tashkil qiladi. Eng kam oylik 4 million so'mdan boshlanib , 33 million so'mgacha bo'lgan ish takliflari aniqlangan . 2 nafar yuristlar mehnat  jamoasini to'liq ta'minlash uchun (qog`ozlar, nusxa olish , pochta va boshqalar) yana qo'shimcha 1 250 000 so'mlik xarajatlar sarflanadi"
+        },
+        "Carousel": {
+          "Carousel_one": "MEHMONXONA VA HOTELLAR,  DALA HOVLI VA SANATORIYALAR",
+          "Carousel_one_text": "Qisqa muddatga mehmonlarni joylashtirish va ko'chmas mulkni qisman yoki butunlay mo‘jiza ishonib topshirish bugungi kundagi eng xatarli bizneslardan biri bo'lib qolmoqda. “ZAKS” talabi bekor bo'lgandan keyin, xavf darajasi yanada ortadi. \n Shartnomangizni bir zumda tezkor, oson va qonuniy tasdiqlab mol-mulkingiz va shaxsiy reputatsiyangizni saqlab qoling.",
+          "Carousel_two": "quv yurtlari kasb hunar va ta'lim markazlari.",
+          "Carousel_two_text": "Deyarli barcha ta’lim markazlariga o’quvchilarni o’z vasiylari(ota-onasi yaqin qarindoshi yoki buvi buvasi) olib keladi. Ta’lim markazlarida dastlabki 2 ta dars bepul bo’lganligi sababli shartnomalar ko’p holda voyaga yetmagan o’quvchilar tomonidan berib yuboriladi va shartnomaning huquqiy statusi boshqarilmaydi. \\n 1doc.uz bilan siz shartnomani onlayn istalgan joydan istalgan adresatga(vasiyga) aniq va oson yetkazasiz.",
+          "Carousel_three": "Ta'mirlash tiklash va qurilish ishlari bilan shug'illanuvchi ustalan brigadasi yoki katta qurilish kompaniyalari.",
+          "Carousel_three_text": "Iqtisodiyot tarmoqlari orasida eng ko'p huquqiy nizolar ko'tariladigan sohalardan biri bu qurilishdir. Qurilish hamisha kechikadi, rejalar unutiladi, sifat holati saqlanmaydi, yoki aksincha mijoz tomonidan mahsulotlar ta'minoti o'z vaqtida yetib kelmaydi. Hattoki qilingan ishlar uchun pul ham ola olmay qolishingiz mumkin. \n 1doc.uz - sizga qurilish sohasi uchun kerakli barcha hujjatlar to'plami yoki, obyektingiz uchun maxsus shartnoma berishga tayyor.",
+          "Carousel_four": "Bo'lib to'lash va mukromoliya tashkilotlari, lambard va kredit byurolari.",
+          "Carousel_four_text": "Siz qimmatbaho buyumingizni mijozga bo'lib to'lashga ishonib topshirmoqdasiz. Mijozning tolov majburiyatini ifodalash, xavf-xatarni jilovlash uchun maksimal himoyalangan shartnomalar taqdim eting. \n Qonuniy ravishda adresat bilan shartnomalar imzolang. Yetkazib berish xatlari va yo'l xatlarini yoqimli bonus sifatida qabul qilib oling."
+        },
+        "Statistics": {
+          "Statistics_title": "Istalgan  hujjatlarni qulay yarating va qulay tasdiqlang",
+          "Statistics_title_one": "Jami foydalanuvchilar",
+          "Statistics_title_two": "Platformada  mavjud hujjatlar shablonlari",
+          "Statistics_title_three": "Platformada yaratilgan hujjat soni "
+        },
+        "Signing": {
+          "Signing_title": "Imzolash Usullari",
+          "Signing_title_one": "FAKSIMILE",
+          "Signing_title_two": "SMS",
+          "Signing_title_three": "TELEGRAM",
+          "Signing_title_four": "FACE ID",
+          "Signing_title_five": "E-IMZo"
+        },
+        "Corparations": {
+          "Corparations_title": "Biz bilan birga"
+        },
+        "Price": {
+          "Price_title": "O'z tarifingizni  tanlang",
+          "Price_month": "Oy",
+          "Price_select": "Tanlash",
+          "Price_one": {
+            "Price_one_title": "START ",
+            "Price_one_content_one": "50 dona hujjatlar",
+            "Price_one_content_two": "50 dona sms-xabarnoma"
+          },
+          "Price_two": {
+            "Price_two_title": "BIZNES ",
+            "Price_two_content_one": "250 dona hujjatlar",
+            "Price_two_content_two": "250 dona sms-xabarnoma"
+          },
+          "Price_three": {
+            "Price_three_title": "SENAT ",
+            "Price_three_content_one": "500 dona hujjatlar",
+            "Price_three_content_two": "500 dona sms-xabarnoma"
+          },
+          "Price_four": {
+            "Price_four_title": "President",
+            "Price_four_content_one": "1000 dona hujjatlar",
+            "Price_four_content_two": "1000 dona sms-xabarnoma"
+          }
+        },
+        "Banner": {
+          "Banner_title": "Bir yechim, cheksiz imkoniyatlar!"
+        },
+        "Footer": {
+          "Column_one": {
+            "Column_one_title": "Biz haqimizda",
+            "Column_one_text_one": "Ma'lumotlarning maxviylik siyosati",
+            "Column_one_text_two": "Ommaviy oferta",
+            "Column_one_text_three": "Rahbariyat"
+          },
+          "Column_two": {
+            "Column_two_title": "Qonuniylik asoslari",
+            "Column_two_text_one": "“Elektron tijorat ” toʼgʼrisidagi “Oʼzbekiston Respublikasi Qonuni.",
+            "Column_two_text_two": "Elektron imzo toʼgʼrisidagi” “Oʼzbekiston Respublikasi Qonuni.",
+            "Column_two_text_three": "Tadbirkorlik subʼektlariga xalqaro platformalar orqali raqamli texnologiyalar uchun qulay shart-sharoitlar yaratish chora tadbirlari toʼgʼrisidagi ”gi qarori.",
+            "Column_two_text_four": "“Jismoniy va yuridik shaxslarning murojaatlari to'g'risiga”gi Qonun"
+          },
+          "Column_three": {
+            "Column_three_title": "Bog'laning"
+          }
+        }
+      },
+      "Error": {
+        "authError": "Login noto'g'ri yozilgan"
+      },
+      "Auth": {
+        "Registration": {
+          "PageTitle": "Ro'yxatdan o'tish",
+          "Name_error": "Ismingizni yozing",
+          "Surname_error": "Famaliyangizni yozing",
+          "Phone_error": "Telefon raqamingizni yozing",
+          "Password_error": "Parolni kiritish",
+          "Whois_error": "Tizimga kirish",
+          "UserExitingError": "Foydalanuvchi allaqachon tizimda mavjud",
+          "RePasswordError": "Parolni tog'ri yozing"
+        },
+        "pageTitle": "Tizimga kirish",
+        "notRegister": "Akkauntingiz yo'qmi?",
+        "register": "Ro'yxatdan o'tish",
+        "phone": "Telefon raqam",
+        "phonePlaceholder": "Telefon raqamingizni kriting +998 ________",
+        "password": "Parol",
+        "passwordPlaceholder": "Maxfiy so'zni kiriting...",
+        "remember": "Meni eslab qol",
+        "forget": "Parolni unutdingizmi?",
+        "button": "Kirish",
+        "UserNotFoundError": "Foydalanuvchi topilmadi",
+        "UserPasswordError": "Login yoki parol xato",
+        "UserExitingError": "Bunaqa foydalanuvchi allaqachon mavjud"
+      },
+      "NotFound": {
+        "pageTitle": "Sahifa topilmadi",
+        "title": "Afsus, Siz qidirgan sahifa topilmadi",
+        "button": "Bosh sahifaga qaytish"
+      }
+    }
+  }
