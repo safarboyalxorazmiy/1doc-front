@@ -18,7 +18,7 @@
   align-items: center;
 }
 .sidebar-nav .right .btn-outline-primary {
-  width: 200px;
+  width: 220px;
   height: 40px;
   font-size: 16px;
   display: flex;
@@ -1043,6 +1043,9 @@
 .contract-add-col .card {
   padding: 15px 20px;
 }
+.contract-add-col .card:nth-child(3) {
+  margin-top: 40px;
+}
 .contract-add-col .card .card-body {
   padding: 0;
 }
@@ -1052,7 +1055,7 @@
   margin-left: calc(var(--bs-gutter-x) * 0.5);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1350px) {
   .contract-add-row {
     flex-direction: column;
   }
@@ -1065,6 +1068,8 @@
   .contract-add-row .BackgroundPage .Page {
     width: 100%;
   }
+}
+@media screen and (max-width: 1000px) {
   .sidebar {
     display: none !important;
   }
