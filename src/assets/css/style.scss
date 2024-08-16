@@ -423,6 +423,7 @@ header {
   }
 }
 
+
 @media only screen and (max-width: 725px) {
   .header-content{
     height: 850px!important;
@@ -432,6 +433,14 @@ header {
     width: 65% !important;
     right: 15%!important;
     top: 500px!important;
+  }
+}
+
+
+@media only screen and (max-width: 725px) {
+  img.tel {
+    right: 5%!important;
+    width: 85% !important;
   }
 }
 
@@ -478,6 +487,10 @@ header {
 @media only screen and (max-width: 586px) {
   header {
     nav {
+      a.logo h1 {
+        font-size: 22px;
+      }
+
       .btns {
         .btn-primary {
           display: none;

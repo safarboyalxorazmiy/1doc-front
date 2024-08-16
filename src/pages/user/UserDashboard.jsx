@@ -72,7 +72,12 @@ const UserDashboard = observer(() => {
     }
 
     if (window.location.pathname == "/user") {
-      setActiveLink("Contract");
+      if (localStorage.getItem("pathname")) {
+        setActiveLink(localStorage.getItem("pathname"));
+      } else {
+        setActiveLink("Contract");
+        localStorage.setItem("pathname", "Contract");
+      }      
 
       applyTheme(theme);
     }
@@ -86,12 +91,13 @@ const UserDashboard = observer(() => {
   const logOut = () => {
     localStorage.clear();
     user.setUser({});
-    user.setIsAuth(false);
+    user.setIsAuth(true);
     navigate(HOME_ROUTE);
   };
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
+    localStorage.setItem("pathname", link);
   };
 
   const handleLinkHover = (link) => {
