@@ -65,7 +65,7 @@
 
 #sidebar {
   max-width: 100%;
-  max-height: 900px;
+  max-height: 100%;
   height: 95vh;
   display: flex;
   overflow: hidden;
@@ -254,6 +254,7 @@
 #sidebar .side-wrapper {
   border-bottom: 1px solid var(--border-color);
   padding: 36px 0;
+  margin-bottom: 36px;
   width: 300px;
 }
 #sidebar .side-wrapper + #sidebar .side-wrapper {
@@ -1032,7 +1033,38 @@
   min-height: 414px;
 }
 
+.BackgroundPage {
+  padding: 20px 20px !important;
+}
+.BackgroundPage .Page {
+  width: 100%;
+}
+
+.contract-add-col .card {
+  padding: 15px 20px;
+}
+.contract-add-col .card .card-body {
+  padding: 0;
+}
+.contract-add-col .card .card-body button {
+  width: 100%;
+  margin-right: calc(var(--bs-gutter-x) * 0.5);
+  margin-left: calc(var(--bs-gutter-x) * 0.5);
+}
+
 @media screen and (max-width: 1000px) {
+  .contract-add-row {
+    flex-direction: column;
+  }
+  .contract-add-row .contract-add-col {
+    width: 100%;
+  }
+  .contract-add-row .BackgroundPage {
+    padding: 20px 20px;
+  }
+  .contract-add-row .BackgroundPage .Page {
+    width: 100%;
+  }
   .sidebar {
     display: none !important;
   }
@@ -2243,6 +2275,12 @@ header .header-content .btns .btn-primary {
     top: 500px !important;
   }
 }
+@media only screen and (max-width: 725px) {
+  img.tel {
+    right: 5% !important;
+    width: 85% !important;
+  }
+}
 @media only screen and (max-width: 700px) {
   header img.tel {
     display: block;
@@ -2272,6 +2310,9 @@ header .header-content .btns .btn-primary {
   }
 }
 @media only screen and (max-width: 586px) {
+  header nav a.logo h1 {
+    font-size: 22px;
+  }
   header nav .btns .btn-primary {
     display: none;
   }

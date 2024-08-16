@@ -90,8 +90,8 @@ const ContractTwo = observer(() => {
         <meta name="description" content="This is my page description." />
       </Helmet>
       <Container fluid>
-        <Row className='mx-2'>
-          <Col xxl={4} xl={4} lg={4} md={4} sm={4}>
+        <Row className='mx-2 contract-add-row'>
+          <Col className="contract-add-col" xxl={4} xl={4} lg={4} md={4} sm={4}>
             <div>
               <span>Contract2</span>
               <Card>
@@ -270,7 +270,7 @@ const ContractTwo = observer(() => {
               </Card>
             </div>
           </Col>
-          <Col xxl={8} xl={8} lg={8} md={8} sm={8}>
+          <Col className="contract-add-col" xxl={8} xl={8} lg={8} md={8} sm={8}>
           <div className='BackgroundPage'>
                 <div className='Page'>
                   <div>

@@ -1126,7 +1126,48 @@
  
 }
 
+.BackgroundPage {
+  padding: 20px 20px!important;
+
+  .Page {
+    width: 100%;
+  }
+}
+
+.contract-add-col {
+
+  .card {
+    padding: 15px 20px;
+
+    .card-body {
+      padding: 0;
+
+      button {
+        width: 100%;
+        margin-right: calc(var(--bs-gutter-x)* .5);
+        margin-left: calc(var(--bs-gutter-x)* .5);    
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1000px) {
+  .contract-add-row {
+    flex-direction: column;
+
+    .contract-add-col {
+      width: 100%;
+    }
+
+    .BackgroundPage {
+      padding: 20px 20px;
+
+      .Page {
+        width: 100%;
+      }
+    }
+  }
+
   .sidebar {
     display: none!important;
   }
