@@ -2515,9 +2515,58 @@ section.second-slider .carousel-item .item-content p {
   font-family: "Gilroy-Medium ☞", sans-serif !important;
 }
 
+@media only screen and (max-width: 5000px) {
+  section.second-slider {
+    height: 1800px;
+  }
+  section.second-slider .carousel-item {
+    padding: 0px 480px;
+  }
+  section.second-slider .carousel-item .item-content .col-md-6 {
+    height: 1600px;
+  }
+}
+@media only screen and (max-width: 3500px) {
+  section.second-slider {
+    height: 1400px;
+  }
+  section.second-slider .carousel-item {
+    padding: 0px 380px;
+    margin-bottom: 50px;
+  }
+  section.second-slider .carousel-item .item-content .col-md-6 {
+    height: 1100px;
+  }
+}
+@media only screen and (max-width: 2500px) {
+  section.second-slider {
+    height: 1000px;
+  }
+  section.second-slider .carousel-item {
+    padding: 0px 280px;
+    margin-bottom: 50px;
+  }
+  section.second-slider .carousel-item .item-content .col-md-6 {
+    height: 700px;
+  }
+}
+@media only screen and (max-width: 2000px) {
+  section.second-slider {
+    height: 1000px;
+  }
+  section.second-slider .carousel-item {
+    padding: 0px 200px;
+  }
+  section.second-slider .carousel-item h1 {
+    height: 100px;
+  }
+  section.second-slider .carousel-item .item-content .col-md-6 {
+    height: 700px;
+  }
+}
 @media only screen and (max-width: 1350px) {
   section.second-slider {
-    height: 650px;
+    height: 900px;
     margin-top: 100px;
   }
   section.second-slider .carousel-item {
@@ -2724,14 +2773,18 @@ section.pricing .pricing-content .price-box h3 span {
 }
 section.pricing .pricing-content .price-box .price-types {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 20px;
   padding: 0px 12px;
   width: 100%;
-  height: 30px;
   border-radius: 7px;
   border: 1px solid #EFEFEF;
   margin-top: auto;
+  height: max-content;
+}
+section.pricing .pricing-content .price-box .price-types .type-1, section.pricing .pricing-content .price-box .price-types .type-2, section.pricing .pricing-content .price-box .price-types .type-3 {
+  width: max-content;
 }
 section.pricing .pricing-content .price-box .btn {
   width: 100%;
@@ -3208,6 +3261,12 @@ main .main-content p.reminder a {
 }
 .navbar-opened {
   margin-right: 0px;
+}
+
+.form-check-inline {
+  display: block !important;
+  width: max-content !important;
+  margin-right: 0;
 }
 
 /*# sourceMappingURL=index.css.map */
